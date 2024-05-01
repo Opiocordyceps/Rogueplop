@@ -82,3 +82,7 @@ visible = false
 offset_right = 480.0
 offset_bottom = 270.0
 color = Color(0, 0, 0, 1)
+
+[node name="holaa" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
