@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b71xptj8xhryt"]
+
+[ext_resource type="Texture2D" uid="uid://cqkxqs7wjner1" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/floor_2.png" id="1_q1gay"]
+
+[node name="tile" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_q1gay")
