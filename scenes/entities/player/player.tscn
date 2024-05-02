@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1qerpdps0e62"]
+
+[ext_resource type="Script" path="res://scenes/entities/player/player.gd" id="1_ofvo7"]
+[ext_resource type="Texture2D" uid="uid://c1jol382fhm1f" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_anim_f0.png" id="2_vu643"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urekg"]
+size = Vector2(16, 16)
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_ofvo7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_urekg")
+one_way_collision_margin = 16.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vu643")

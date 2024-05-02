@@ -1,5 +1,5 @@
 extends Node2D
-
+#hola mundo#
 var tile = preload("res://tile.tscn")
 
 const dir = [Vector2.RIGHT, Vector2.LEFT, Vector2.UP, Vector2.DOWN]

@@ -1,2 +1,10 @@
 res://game.tscn
 res://tile.tscn
+res://game.gd
+res://scenes/dungeon/rooms/spawn/spawn.tscn
+res://scenes/dungeon/dungeon.tscn
+res://scenes/dungeon/rooms/dungeon.tscn
+res://scenes/entities/player/player.tscn
+res://scenes/entities/player/player.gd
+res://scenes/dungeon/rooms/spawn.tscn
+res://scenes/abilities/move/move.tscn
