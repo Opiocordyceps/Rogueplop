@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://b73q4816h86l0"]
+[gd_scene load_steps=9 format=3 uid="uid://b73q4816h86l0"]
 
 [ext_resource type="Texture2D" uid="uid://ly0hlrofy8kn" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="1_6xkdl"]
 [ext_resource type="PackedScene" uid="uid://b1qerpdps0e62" path="res://scenes/entities/player/player.tscn" id="2_fe81g"]
 [ext_resource type="PackedScene" uid="uid://byuiyktuam5uw" path="res://scenes/entities/enemies/Slime2.tscn" id="3_ymg1i"]
+[ext_resource type="PackedScene" uid="uid://bl7uy4e1hpm1j" path="res://scenes/UI/healthbar.tscn" id="4_q6ofb"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_80c8u"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -204,3 +205,8 @@ position = Vector2(243.195, 139.562)
 [node name="slime2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_ymg1i")]
 position = Vector2(379, 137)
 player = NodePath("../player")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ProgressBar" parent="CanvasLayer" node_paths=PackedStringArray("player") instance=ExtResource("4_q6ofb")]
+player = NodePath("../../player")

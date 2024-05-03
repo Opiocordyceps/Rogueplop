@@ -11,3 +11,8 @@ res://Slime.gd
 res://slime2.gd
 res://scenes/entities/enemies/slime.tscn
 res://scenes/entities/enemies/Slime2.tscn
+res://scripts/healthbar.gd
+res://scenes/UI/healthbar.tscn
+res://scripts/player.gd
+res://scripts/slime2.gd
+res://scripts/game.gd

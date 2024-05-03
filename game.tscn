@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://i23jbfdxjncm"]
 
 [ext_resource type="Texture2D" uid="uid://ly0hlrofy8kn" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="1_t44d3"]
-[ext_resource type="Script" path="res://game.gd" id="2_qablg"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="2_qablg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qka78"]
 texture = ExtResource("1_t44d3")

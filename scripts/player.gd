@@ -1,7 +1,11 @@
 extends CharacterBody2D
-
+signal cambioVida
 const SPEED = 200.0
+var maxVida = 30
+var dañado: bool = false
+@onready var vidaActual: int = maxVida
 @onready var animation = $AnimatedSprite2D
+@onready var hurtBox = $hurtBox
 
 func _physics_process(delta):
 	##Consigue las inputs de cualquier direccion
@@ -18,3 +22,10 @@ func _physics_process(delta):
 		animation.play("run")
 	velocity = direction * SPEED
 	move_and_slide()
+
+func _on_hurt_box_area_entered(area):
+	if area.name == "hitBox":
+		vidaActual -= 10
+		if vidaActual <0:
+			vidaActual = maxVida
+		cambioVida.emit()

@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://byuiyktuam5uw"]
+[gd_scene load_steps=12 format=3 uid="uid://byuiyktuam5uw"]
 
-[ext_resource type="Script" path="res://slime2.gd" id="1_brqdl"]
+[ext_resource type="Script" path="res://scripts/slime2.gd" id="1_l3ib1"]
 [ext_resource type="Texture2D" uid="uid://crirmb06tnp8j" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png" id="2_7rwvq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pdlmw"]
@@ -54,10 +54,15 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t3ixh"]
-radius = 5.0
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_44qkm"]
+radius = 6.0
 
 [node name="slime" type="CharacterBody2D"]
-script = ExtResource("1_brqdl")
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_l3ib1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_q7qhu")
@@ -66,6 +71,7 @@ frame = 5
 frame_progress = 0.682271
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_t3ixh")
 
@@ -75,5 +81,11 @@ shape = SubResource("CircleShape2D_t3ixh")
 process_callback = 0
 wait_time = 0.5
 autostart = true
+
+[node name="hitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitBox"]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_44qkm")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
