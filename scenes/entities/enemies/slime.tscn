@@ -1,0 +1,93 @@
+[gd_scene load_steps=11 format=3 uid="uid://b5p0r4vckoudk"]
+
+[ext_resource type="Texture2D" uid="uid://crirmb06tnp8j" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png" id="2_ww6h3"]
+
+[sub_resource type="GDScript" id="GDScript_prlk7"]
+script/source = "extends Node2D
+@export var speed = 100
+var  player_posittion
+var target_posittion
+@onready var player = get_parent().get_node(\"player\")
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	player_posittion = player.posittion;
+	target_posittion = (player_posittion- position).normalized;
+	
+	if position.distance_to(player_posittion)>3:
+		move_and_slide(target_posittion * speed);
+	
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdlmw"]
+atlas = ExtResource("2_ww6h3")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o61wp"]
+atlas = ExtResource("2_ww6h3")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai256"]
+atlas = ExtResource("2_ww6h3")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xphx5"]
+atlas = ExtResource("2_ww6h3")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aa4xp"]
+atlas = ExtResource("2_ww6h3")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1a7c"]
+atlas = ExtResource("2_ww6h3")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jrlmy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdlmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o61wp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai256")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xphx5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aa4xp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1a7c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qpmmb"]
+radius = 5.0
+
+[node name="Slime" type="Node2D"]
+script = SubResource("GDScript_prlk7")
+speed = null
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jrlmy")
+frame = 5
+frame_progress = 0.0349575
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 2)
+shape = SubResource("CircleShape2D_qpmmb")

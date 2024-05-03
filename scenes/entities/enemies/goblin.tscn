@@ -1,0 +1,70 @@
+[gd_scene load_steps=10 format=3 uid="uid://b7qgx4hyyjj4l"]
+
+[ext_resource type="Texture2D" uid="uid://5whprvl1oikq" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_spritesheet.png" id="1_bwevm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3s0nr"]
+atlas = ExtResource("1_bwevm")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55lpm"]
+atlas = ExtResource("1_bwevm")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ru5qx"]
+atlas = ExtResource("1_bwevm")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_583cc"]
+atlas = ExtResource("1_bwevm")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pibrl"]
+atlas = ExtResource("1_bwevm")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1g3s5"]
+atlas = ExtResource("1_bwevm")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dkgjk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3s0nr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55lpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ru5qx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_583cc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pibrl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1g3s5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jo0mh"]
+size = Vector2(6, 12)
+
+[node name="goblin" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dkgjk")
+autoplay = "default"
+frame = 3
+frame_progress = 0.230054
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_jo0mh")
