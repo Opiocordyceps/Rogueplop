@@ -1,4 +1,3 @@
-res://MainMenu.tscn
 res://game.tscn
 res://tile.tscn
 res://scenes/dungeon/rooms/dungeon.tscn
@@ -9,4 +8,6 @@ res://scenes/abilities/move/move.tscn
 res://scenes/entities/enemies/goblin.tscn
 res://scenes/entities/enemies/Slime2.tscn
 res://scenes/UI/healthbar.tscn
-res://MainMenu.gd
+res://MainMenu.tscn
+res://scenes/UI/heart.tscn
+res://scenes/World(unused)/World.tscn
