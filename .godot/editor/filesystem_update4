@@ -11,3 +11,14 @@ res://scenes/UI/healthbar.tscn
 res://MainMenu.tscn
 res://scenes/UI/heart.tscn
 res://scenes/World(unused)/World.tscn
+res://scenes/UI/heartcontainer.tscn
+res://scenes/dungeon/rooms/Room.tscn
+res://scenes/dungeon/rooms/room_0.tscn
+res://scenes/dungeon/Door.tscn
+res://scenes/dungeon/Door.gd
+res://scenes/dungeon/Doors/Door.tscn
+res://scenes/dungeon/Doors/Door.gd
+res://scenes/dungeon/rooms/Door.tscn
+res://scenes/dungeon/rooms/Room.gd
+res://scenes/entities/enemies/slime.tscn
+res://scripts/slime2.gd
