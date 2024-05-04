@@ -1,3 +1,4 @@
+res://MainMenu.tscn
 res://game.tscn
 res://tile.tscn
 res://scenes/dungeon/rooms/dungeon.tscn
@@ -8,6 +9,4 @@ res://scenes/abilities/move/move.tscn
 res://scenes/entities/enemies/goblin.tscn
 res://scenes/entities/enemies/Slime2.tscn
 res://scenes/UI/healthbar.tscn
-res://scenes/UI/heart.tscn
-res://scenes/UI/heartcontainer.tscn
-res://scenes/UI/texture_progress_bar.tscn
+res://MainMenu.gd

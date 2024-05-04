@@ -1,10 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714785888
-game.gd::GDScript::-1::1714685952::0::1::::<>Node2D<>::
-game.tscn::PackedScene::618965156821261148::1714785888::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>res://game.gd
+::res://::1714787925
+game.tscn::PackedScene::618965156821261148::1714787697::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>res://scripts/game.gd
 icon.svg::CompressedTexture2D::3858921828071250356::1714685952::1714685952::1::::<><>::
-slime2.gd::GDScript::-1::1714785312::0::1::::<>CharacterBody2D<>::
-tile.tscn::PackedScene::4687561792835186447::1714785888::0::1::::<><>::uid://cqkxqs7wjner1::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/floor_2.png
+tile.tscn::PackedScene::4687561792835186447::1714787697::0::1::::<><>::uid://cqkxqs7wjner1::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/floor_2.png
 ::res://addons/::1714685952
 ::res://addons/2d_shapes/::1714685952
 Arrow.svg::CompressedTexture2D::4957693518589948589::1714685952::1714685952::1::::<><>::
@@ -29,7 +27,139 @@ Polygon.gd::GDScript::-1::1714685952::0::1::::Polygon<>GeometricShape<>res://add
 Rectangle.gd::GDScript::-1::1714685952::0::1::::Rectangle<>GeometricShape<>res://addons/2d_shapes/Rectangle.svg::
 Star.gd::GDScript::-1::1714685952::0::1::::Star<>GeometricShape<>res://addons/2d_shapes/Star.svg::
 Triangle.gd::GDScript::-1::1714685952::0::1::::Triangle<>GeometricShape<>res://addons/2d_shapes/Triangle.svg::
-::res://Art/::1714685952
+::res://Art/::1714787116
+::res://Art/health/::1714787116
+Heart&ManaUi.png::CompressedTexture2D::8724667038175115194::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/::1714787116
+::res://Art/SimplePixelArtUIpack/Artwork/::1714787116
+::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/::1714787116
+::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/icons/::1714787116
+isonswhite2.png::CompressedTexture2D::3220792982131935778::1714787116::1714787116::1::::<><>::
+lockedwhite.png::CompressedTexture2D::4095167927841924469::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/rounded/::1714787116
+Background_CC_rounded.png::CompressedTexture2D::8342916999926815466::1714787116::1714787116::1::::<><>::
+bar_rounded_CC_horizontal.png::CompressedTexture2D::4342737632556138592::1714787116::1714787116::1::::<><>::
+bar_rounded_CC_Vertical.png::CompressedTexture2D::1771905623605841812::1714787116::1714787116::1::::<><>::
+border_Rounded_CC.png::CompressedTexture2D::1119873426322613346::1714787116::1714787116::1::::<><>::
+InputField_CC.png::CompressedTexture2D::4197819462845482014::1714787116::1714787116::1::::<><>::
+Slot3D_rounded_CC.png::CompressedTexture2D::8609861613979189568::1714787116::1714787116::1::::<><>::
+Slot_rounded_CC.png::CompressedTexture2D::434370766607135052::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/rounded/buttons/::1714787116
+button2_rounded_CC.png::CompressedTexture2D::617561043428878849::1714787116::1714787116::1::::<><>::
+button_rounded_CC.png::CompressedTexture2D::6466775989589151362::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/square/::1714787116
+background.png::CompressedTexture2D::5507680590407398752::1714787116::1714787116::1::::<><>::
+bar_horizontal.png::CompressedTexture2D::2753433052964042001::1714787116::1714787116::1::::<><>::
+bar_vertical.png::CompressedTexture2D::7374525623783803897::1714787116::1714787116::1::::<><>::
+border.png::CompressedTexture2D::7138650193968992736::1714787116::1714787116::1::::<><>::
+InputFieldwhite.png::CompressedTexture2D::2224863873092162109::1714787116::1714787116::1::::<><>::
+slot3D.png::CompressedTexture2D::5745393824696456243::1714787116::1714787116::1::::<><>::
+slot.png::CompressedTexture2D::7161698879539003379::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/square/buttons/::1714787116
+button_1.png::CompressedTexture2D::5557809469600118492::1714787116::1714787116::1::::<><>::
+button_2.png::CompressedTexture2D::8837245317455815001::1714787116::1714787116::1::::<><>::
+button_small_1.png::CompressedTexture2D::146668624662098378::1714787116::1714787116::1::::<><>::
+button_small_2.png::CompressedTexture2D::6773139836833909984::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/Gray/::1714787116
+::res://Art/SimplePixelArtUIpack/Artwork/Gray/icons/::1714787116
+icons.png::CompressedTexture2D::4259406753238191012::1714787116::1714787116::1::::<><>::
+locked.png::CompressedTexture2D::94959217313626066::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/Gray/rounded/::1714787116
+Background_GB_rounded.png::CompressedTexture2D::5487886782245717348::1714787116::1714787116::1::::<><>::
+border_Rounded_GB.png::CompressedTexture2D::1935906485608035743::1714787116::1714787116::1::::<><>::
+InputField_Rounded_GB.png::CompressedTexture2D::4889153572800267195::1714787116::1714787116::1::::<><>::
+off_rounded.png::CompressedTexture2D::179441518465484426::1714787116::1714787116::1::::<><>::
+Slot3D_rounded_GB.png::CompressedTexture2D::7805552787027531758::1714787116::1714787116::1::::<><>::
+Slot_rounded_GB.png::CompressedTexture2D::6957487903806042245::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/Gray/rounded/buttons/::1714787116
+button2_rounded_GB.png::CompressedTexture2D::4709676922175699316::1714787116::1714787116::1::::<><>::
+button_rounded_GB.png::CompressedTexture2D::4149484471221511438::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/Gray/square/::1714787116
+background.png::CompressedTexture2D::2891038213797175704::1714787116::1714787116::1::::<><>::
+border.png::CompressedTexture2D::9117729150692003220::1714787116::1714787116::1::::<><>::
+InputField.png::CompressedTexture2D::5744076463384666072::1714787116::1714787116::1::::<><>::
+slot3D.png::CompressedTexture2D::6339369214052739573::1714787116::1714787116::1::::<><>::
+slot.png::CompressedTexture2D::7075000010122947301::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/Gray/square/Buttons/::1714787116
+button_1.png::CompressedTexture2D::5195807029035830125::1714787116::1714787116::1::::<><>::
+button_2.png::CompressedTexture2D::5389886164964239076::1714787116::1714787116::1::::<><>::
+button_small_1.png::CompressedTexture2D::705072544153995974::1714787116::1714787116::1::::<><>::
+button_small_2.png::CompressedTexture2D::31265169561337965::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/::1714787116
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/rounded/::1714787116
+Background_HCC_rounded.png::CompressedTexture2D::7859388334340160400::1714787116::1714787116::1::::<><>::
+bar_rounded_HCC_horizontal.png::CompressedTexture2D::2200522438578266181::1714787116::1714787116::1::::<><>::
+bar_rounded_HCC_Vertical.png::CompressedTexture2D::843370259251175545::1714787116::1714787116::1::::<><>::
+border_Rounded_HCC.png::CompressedTexture2D::1804639008546651806::1714787116::1714787116::1::::<><>::
+InputField_Rounded_HCC.png::CompressedTexture2D::6481214696521818045::1714787116::1714787116::1::::<><>::
+Slot3D_rounded_HCC.png::CompressedTexture2D::6547472396512037520::1714787116::1714787116::1::::<><>::
+Slot_rounded_HCC.png::CompressedTexture2D::3924527608037500877::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/rounded/buttons/::1714787116
+button2_rounded_HCC.png::CompressedTexture2D::1421704601170948745::1714787116::1714787116::1::::<><>::
+button_rounded_HCC.png::CompressedTexture2D::7740589921847495458::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/square/::1714787116
+background.png::CompressedTexture2D::2913204201578279072::1714787116::1714787116::1::::<><>::
+bar_horizontal.png::CompressedTexture2D::3148283482545382336::1714787116::1714787116::1::::<><>::
+bar_vertical.png::CompressedTexture2D::7637026330099493937::1714787116::1714787116::1::::<><>::
+border.png::CompressedTexture2D::1046814777682130527::1714787116::1714787116::1::::<><>::
+InputField.png::CompressedTexture2D::1586911933084537401::1714787116::1714787116::1::::<><>::
+slot3D.png::CompressedTexture2D::983069508499900582::1714787116::1714787116::1::::<><>::
+slot.png::CompressedTexture2D::3810436515079569083::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/square/Buttons/::1714787116
+button_1.png::CompressedTexture2D::2757947895003548996::1714787116::1714787116::1::::<><>::
+button_2.png::CompressedTexture2D::4344933759828419998::1714787116::1714787116::1::::<><>::
+button_small_1.png::CompressedTexture2D::6665413967770623372::1714787116::1714787116::1::::<><>::
+button_small_2.png::CompressedTexture2D::1532334992332437283::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/square/scroll_horizontal/::1714787116
+background.png::CompressedTexture2D::2957051037281401851::1714787116::1714787116::1::::<><>::
+handle.png::CompressedTexture2D::7308742617790393358::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/square/scroll_vertical/::1714787116
+background.png::CompressedTexture2D::4060270569097073996::1714787116::1714787116::1::::<><>::
+handle.png::CompressedTexture2D::5463657877177650815::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/square/Slider/::1714787116
+background_horizontal.png::CompressedTexture2D::6230663285570289643::1714787116::1714787116::1::::<><>::
+background_vertical.png::CompressedTexture2D::104395037689968341::1714787116::1714787116::1::::<><>::
+filled_horizontal.png::CompressedTexture2D::8373586145004671316::1714787116::1714787116::1::::<><>::
+filled_vertical.png::CompressedTexture2D::7825602687335536786::1714787116::1714787116::1::::<><>::
+handle.png::CompressedTexture2D::5689826123062373402::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/square/slider2/::1714787116
+background_horizontal.png::CompressedTexture2D::3346843460564629753::1714787116::1714787116::1::::<><>::
+background_vertical.png::CompressedTexture2D::8894092272915222291::1714787116::1714787116::1::::<><>::
+filled_horizontal.png::CompressedTexture2D::8241998724688148735::1714787116::1714787116::1::::<><>::
+filled_vertical.png::CompressedTexture2D::6498927007385609344::1714787116::1714787116::1::::<><>::
+handle_horizontal.png::CompressedTexture2D::4359099076397466429::1714787116::1714787116::1::::<><>::
+handle_vertical.png::CompressedTexture2D::774934338515182875::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/square/slider3/::1714787116
+background_horizontal.png::CompressedTexture2D::5222750932515432670::1714787116::1714787116::1::::<><>::
+Background_vertical.png::CompressedTexture2D::7307622205169404985::1714787116::1714787116::1::::<><>::
+filled_horizontal.png::CompressedTexture2D::8494960557958150496::1714787116::1714787116::1::::<><>::
+filled_vertical.png::CompressedTexture2D::3174001831319357754::1714787116::1714787116::1::::<><>::
+handle.png::CompressedTexture2D::1737762159618165274::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/half_Customizible/square/toogle/::1714787116
+off2.png::CompressedTexture2D::269188995738267953::1714787116::1714787116::1::::<><>::
+off.png::CompressedTexture2D::8371107651445317322::1714787116::1714787116::1::::<><>::
+on2.png::CompressedTexture2D::1001151205667381593::1714787116::1714787116::1::::<><>::
+on3.png::CompressedTexture2D::6186247619361306476::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/Artwork/ui/::1714787116
+LifeBarMiniProgress.png::CompressedTexture2D::4322301505411130954::1714787116::1714787116::1::::<><>::
+LifeBarMiniUnder.png::CompressedTexture2D::3354829757704693904::1714787116::1714787116::1::::<><>::
+::res://Art/SimplePixelArtUIpack/fonts/::1714787116
+::res://Art/SimplePixelArtUIpack/fonts/font 1/::1714787116
+license.txt::TextFile::-1::1714787116::0::1::::<><>::
+pixelfont.ttf::FontFile::8856854561113453114::1714787116::1714787116::1::::<><>::
+readme.txt::TextFile::-1::1714787116::0::1::::<><>::
+::res://Art/SimplePixelArtUIpack/fonts/font 2/::1714787116
+license.txt::TextFile::-1::1714787116::0::1::::<><>::
+pixelfont2.ttf::FontFile::7912966275087428303::1714787116::1714787116::1::::<><>::
+readme.txt::TextFile::-1::1714787116::0::1::::<><>::
+::res://Art/SimplePixelArtUIpack/update 1.15/::1714787116
+arrow_CC.png::CompressedTexture2D::7008503832682665889::1714787116::1714787116::1::::<><>::
+dropdown_CC.png::CompressedTexture2D::4831565642293556322::1714787116::1714787116::1::::<><>::
+dropdown_GB.png::CompressedTexture2D::3724932798622975117::1714787116::1714787116::1::::<><>::
+dropdown_HCC.png::CompressedTexture2D::9045092415372952323::1714787116::1714787116::1::::<><>::
+dropdown_rounded_CC.png::CompressedTexture2D::3264894403455249402::1714787116::1714787116::1::::<><>::
+dropdown_rounded_GB.png::CompressedTexture2D::5057537893304373940::1714787116::1714787116::1::::<><>::
+dropdown_rounded_HCC.png::CompressedTexture2D::7510308577833511584::1714787116::1714787116::1::::<><>::
 ::res://Art/v1.1 dungeon crawler 16X16 pixel pack/::1714685952
 full spritesheet.png::CompressedTexture2D::1187958356111842982::1714685952::1714685952::1::::<><>::
 full tilemap.png::CompressedTexture2D::823153376154572789::1714685952::1714685952::1::::<><>::
@@ -57,7 +187,7 @@ slash_effect_anim_f1.png::CompressedTexture2D::5346020221714927139::1714685952::
 slash_effect_anim_f2.png::CompressedTexture2D::7481063342052852087::1714685952::1714685952::1::::<><>::
 slash_effect_anim_spritesheet.png::CompressedTexture2D::3124170972892667499::1714685952::1714685952::1::::<><>::
 ::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/::1714685952
-::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/flying creature/::1714685952
+::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/flying creature/::1714787116
 fly_anim_f0.png::CompressedTexture2D::3653103419596467236::1714685952::1714685952::1::::<><>::
 fly_anim_f1.png::CompressedTexture2D::3949583874425941515::1714685952::1714685952::1::::<><>::
 fly_anim_f2.png::CompressedTexture2D::6726113027970245831::1714685952::1714685952::1::::<><>::
@@ -224,29 +354,41 @@ wall_top_inner_right.png::CompressedTexture2D::958903031054672525::1714685952::1
 wall_top_inner_right_2.png::CompressedTexture2D::2235196640073647650::1714685952::1714685952::1::::<><>::
 wall_top_left.png::CompressedTexture2D::8535158269605329472::1714685952::1714685952::1::::<><>::
 wall_top_right.png::CompressedTexture2D::7717282343554819546::1714685952::1714685952::1::::<><>::
-::res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/::1714685952
+::res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/::1714787116
 crosshair_1.png::CompressedTexture2D::5151655920422403918::1714685952::1714685952::1::::<><>::
 crosshair_2.png::CompressedTexture2D::7791298858400917887::1714685952::1714685952::1::::<><>::
 crosshair_3.png::CompressedTexture2D::82615390223315213::1714685952::1714685952::1::::<><>::
 health_ui.png::CompressedTexture2D::5374142270589002652::1714685952::1714685952::1::::<><>::
+heart.png::CompressedTexture2D::7030777149300635631::1714787116::1714787116::1::::<><>::
 menu_button.png::CompressedTexture2D::554211309185792386::1714685952::1714685952::1::::<><>::
 menu_button_press.png::CompressedTexture2D::3125956939784799607::1714685952::1714685952::1::::<><>::
 pause_button.png::CompressedTexture2D::4094594109205416191::1714685952::1714685952::1::::<><>::
 pause_button_press.png::CompressedTexture2D::8092306051885678500::1714685952::1714685952::1::::<><>::
-::res://scenes/::1714685952
+::res://scenes/::1714787116
 ::res://scenes/abilities/::1714685952
-::res://scenes/abilities/move/::1714785888
-move.tscn::PackedScene::8692123091750300917::1714785888::0::1::::<><>::
-::res://scenes/dungeon/::1714785888
-dungeon.tscn::PackedScene::4691291291985971811::1714785888::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>uid://b1qerpdps0e62::::res://scenes/entities/player/player.tscn<>uid://byuiyktuam5uw::::res://scenes/entities/enemies/Slime2.tscn
-::res://scenes/dungeon/rooms/::1714785888
-dungeon.tscn::PackedScene::1714784957553195656::1714785888::0::1::::<><>::
-spawn.tscn::PackedScene::554427010750038146::1714785888::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png
+::res://scenes/abilities/move/::1714787697
+move.tscn::PackedScene::8692123091750300917::1714787697::0::1::::<><>::
+::res://scenes/dungeon/::1714787697
+dungeon.tscn::PackedScene::4691291291985971811::1714787697::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>uid://b1qerpdps0e62::::res://scenes/entities/player/player.tscn<>uid://byuiyktuam5uw::::res://scenes/entities/enemies/Slime2.tscn<>uid://cljqw1v1n2yog::::res://scenes/UI/heartcontainer.tscn
+::res://scenes/dungeon/rooms/::1714787697
+dungeon.tscn::PackedScene::1714784957553195656::1714787697::0::1::::<><>::
+spawn.tscn::PackedScene::554427010750038146::1714787697::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png
 ::res://scenes/entities/::1714785312
-::res://scenes/entities/enemies/::1714785888
-goblin.tscn::PackedScene::4665900634505177617::1714785888::0::1::::<><>::uid://5whprvl1oikq::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_spritesheet.png
-Slime2.tscn::PackedScene::4112769636576923862::1714785888::0::1::::<><>::res://slime2.gd<>uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
+::res://scenes/entities/enemies/::1714787697
+goblin.tscn::PackedScene::4665900634505177617::1714787697::0::1::::<><>::uid://5whprvl1oikq::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_spritesheet.png
+Slime2.tscn::PackedScene::4112769636576923862::1714787697::0::1::::<><>::res://scripts/slime2.gd<>uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
 slime.tscn::PackedScene::4524601498183368656::1714785312::0::1::::<><>::uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
-::res://scenes/entities/player/::1714785888
-player.gd::GDScript::-1::1714785312::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::4244634682005587665::1714785888::0::1::::<><>::res://scenes/entities/player/player.gd<>uid://c1jol382fhm1f::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_anim_f0.png
+::res://scenes/entities/player/::1714787697
+player.tscn::PackedScene::4244634682005587665::1714787697::0::1::::<><>::res://scripts/player.gd<>uid://byco2mirtb5dt::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_spritesheet.png<>uid://jwtxtvxmj5tc::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_run_spritesheet.png
+::res://scenes/UI/::1714787697
+healthbar.tscn::PackedScene::3225816781298068437::1714787697::0::1::::<><>::
+heart.tscn::PackedScene::7949601464707518581::1714787116::0::1::::<><>::res://scripts/heart.gd<>uid://c7f04wsmooyjn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/heart.png
+heartcontainer.tscn::PackedScene::5564510205789046762::1714787116::0::1::::<><>::res://scripts/heartcontainer.gd
+texture_progress_bar.tscn::PackedScene::1101146873943525286::1714787116::0::1::::<><>::uid://bn2ds5xs5a625::::res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniUnder.png<>uid://b24wiwabm4l8k::::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/rounded/bar_rounded_CC_horizontal.png<>uid://b2t0w6quwc8vm::::res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniProgress.png<>res://scripts/barra_de_vida.gd
+::res://scripts/::1714787116
+barra_de_vida.gd::GDScript::-1::1714787116::0::1::::<>TextureProgressBar<>::
+game.gd::GDScript::-1::1714787116::0::1::::<>Node2D<>::
+heart.gd::GDScript::-1::1714787116::0::1::::<>Panel<>::
+heartcontainer.gd::GDScript::-1::1714787116::0::1::::<>HBoxContainer<>::
+player.gd::GDScript::-1::1714787116::0::1::::<>CharacterBody2D<>::
+slime2.gd::GDScript::-1::1714787116::0::1::::<>CharacterBody2D<>::
