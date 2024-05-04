@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ly0hlrofy8kn" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="1_6xkdl"]
 [ext_resource type="PackedScene" uid="uid://b1qerpdps0e62" path="res://scenes/entities/player/player.tscn" id="2_fe81g"]
 [ext_resource type="PackedScene" uid="uid://byuiyktuam5uw" path="res://scenes/entities/enemies/Slime2.tscn" id="3_ymg1i"]
-[ext_resource type="PackedScene" uid="uid://bl7uy4e1hpm1j" path="res://scenes/UI/healthbar.tscn" id="4_q6ofb"]
+[ext_resource type="PackedScene" uid="uid://cljqw1v1n2yog" path="res://scenes/UI/heartcontainer.tscn" id="5_7pi21"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_80c8u"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -208,5 +208,9 @@ player = NodePath("../player")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="ProgressBar" parent="CanvasLayer" node_paths=PackedStringArray("player") instance=ExtResource("4_q6ofb")]
+[node name="HBoxContainer" parent="CanvasLayer" node_paths=PackedStringArray("player") instance=ExtResource("5_7pi21")]
+offset_left = -396.0
+offset_top = 22.0
+offset_right = -356.0
+offset_bottom = 62.0
 player = NodePath("../../player")

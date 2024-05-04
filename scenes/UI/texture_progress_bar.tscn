@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3 uid="uid://pxny0yubwmfm"]
+
+[ext_resource type="Texture2D" uid="uid://bn2ds5xs5a625" path="res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniUnder.png" id="1_aqslx"]
+[ext_resource type="Texture2D" uid="uid://b24wiwabm4l8k" path="res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/rounded/bar_rounded_CC_horizontal.png" id="2_kj5xo"]
+[ext_resource type="Texture2D" uid="uid://b2t0w6quwc8vm" path="res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniProgress.png" id="3_yx51q"]
+[ext_resource type="Script" path="res://scripts/barra_de_vida.gd" id="4_yjn0n"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_qv6oc"]
+specular_texture = ExtResource("2_kj5xo")
+specular_color = Color(1, 0, 0, 1)
+
+[node name="TextureProgressBar" type="TextureProgressBar"]
+offset_right = 28.0
+offset_bottom = 40.0
+max_value = 5.0
+texture_under = ExtResource("1_aqslx")
+texture_over = SubResource("CanvasTexture_qv6oc")
+texture_progress = ExtResource("3_yx51q")
+script = ExtResource("4_yjn0n")

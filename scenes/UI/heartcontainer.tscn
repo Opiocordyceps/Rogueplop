@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cljqw1v1n2yog"]
+
+[ext_resource type="Script" path="res://scripts/heartcontainer.gd" id="1_x8v7b"]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+layout_direction = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/separation = 18
+script = ExtResource("1_x8v7b")
