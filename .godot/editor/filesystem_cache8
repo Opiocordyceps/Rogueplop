@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714783281
-game.tscn::PackedScene::618965156821261148::1714783281::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>res://scripts/game.gd
+::res://::1714784822
+game.tscn::PackedScene::618965156821261148::1714784769::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>res://scripts/game.gd
 icon.svg::CompressedTexture2D::3858921828071250356::1714682121::1714682121::1::::<><>::
-tile.tscn::PackedScene::4687561792835186447::1714783281::0::1::::<><>::uid://cqkxqs7wjner1::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/floor_2.png
+tile.tscn::PackedScene::4687561792835186447::1714784769::0::1::::<><>::uid://cqkxqs7wjner1::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/floor_2.png
 ::res://addons/::1714682121
 ::res://addons/2d_shapes/::1714682121
 Arrow.svg::CompressedTexture2D::4957693518589948589::1714682121::1714682121::1::::<><>::
@@ -354,7 +354,7 @@ wall_top_inner_right.png::CompressedTexture2D::958903031054672525::1714682121::1
 wall_top_inner_right_2.png::CompressedTexture2D::2235196640073647650::1714682121::1714682121::1::::<><>::
 wall_top_left.png::CompressedTexture2D::8535158269605329472::1714682121::1714682121::1::::<><>::
 wall_top_right.png::CompressedTexture2D::7717282343554819546::1714682121::1714682121::1::::<><>::
-::res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/::1714783526
+::res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/::1714783527
 crosshair_1.png::CompressedTexture2D::5151655920422403918::1714682121::1714682121::1::::<><>::
 crosshair_2.png::CompressedTexture2D::7791298858400917887::1714682121::1714682121::1::::<><>::
 crosshair_3.png::CompressedTexture2D::82615390223315213::1714682121::1714682121::1::::<><>::
@@ -366,29 +366,29 @@ pause_button.png::CompressedTexture2D::4094594109205416191::1714682121::17146821
 pause_button_press.png::CompressedTexture2D::8092306051885678500::1714682121::1714682121::1::::<><>::
 ::res://scenes/::1714713903
 ::res://scenes/abilities/::1714682121
-::res://scenes/abilities/move/::1714783281
-move.tscn::PackedScene::8692123091750300917::1714783281::0::1::::<><>::
-::res://scenes/dungeon/::1714783281
-dungeon.tscn::PackedScene::4691291291985971811::1714783281::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>uid://b1qerpdps0e62::::res://scenes/entities/player/player.tscn<>uid://byuiyktuam5uw::::res://scenes/entities/enemies/Slime2.tscn<>uid://pxny0yubwmfm::::res://scenes/UI/texture_progress_bar.tscn
-::res://scenes/dungeon/rooms/::1714783281
-dungeon.tscn::PackedScene::1714784957553195656::1714783281::0::1::::<><>::
-spawn.tscn::PackedScene::554427010750038146::1714783281::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png
+::res://scenes/abilities/move/::1714784769
+move.tscn::PackedScene::8692123091750300917::1714784769::0::1::::<><>::
+::res://scenes/dungeon/::1714784769
+dungeon.tscn::PackedScene::4691291291985971811::1714784769::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>uid://b1qerpdps0e62::::res://scenes/entities/player/player.tscn<>uid://byuiyktuam5uw::::res://scenes/entities/enemies/Slime2.tscn<>uid://cljqw1v1n2yog::::res://scenes/UI/heartcontainer.tscn
+::res://scenes/dungeon/rooms/::1714784769
+dungeon.tscn::PackedScene::1714784957553195656::1714784769::0::1::::<><>::
+spawn.tscn::PackedScene::554427010750038146::1714784769::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png
 ::res://scenes/entities/::1714688341
-::res://scenes/entities/enemies/::1714783281
-goblin.tscn::PackedScene::4665900634505177617::1714783281::0::1::::<><>::uid://5whprvl1oikq::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_spritesheet.png
-Slime2.tscn::PackedScene::4112769636576923862::1714783281::0::1::::<><>::res://scripts/slime2.gd<>uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
+::res://scenes/entities/enemies/::1714784770
+goblin.tscn::PackedScene::4665900634505177617::1714784769::0::1::::<><>::uid://5whprvl1oikq::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_spritesheet.png
+Slime2.tscn::PackedScene::4112769636576923862::1714784770::0::1::::<><>::res://scripts/slime2.gd<>uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
 slime.tscn::PackedScene::4524601498183368656::1714693799::0::1::::<><>::uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
-::res://scenes/entities/player/::1714783281
-player.tscn::PackedScene::4244634682005587665::1714783281::0::1::::<><>::res://scripts/player.gd<>uid://byco2mirtb5dt::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_spritesheet.png<>uid://jwtxtvxmj5tc::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_run_spritesheet.png
-::res://scenes/UI/::1714783281
-healthbar.tscn::PackedScene::3225816781298068437::1714783281::0::1::::<><>::
-heart.tscn::PackedScene::7949601464707518581::1714783281::0::1::::<><>::uid://dwkj8ydegehkk::::res://Art/health/Heart&ManaUi.png<>res://scripts/heart.gd
-heartcontainer.tscn::PackedScene::5564510205789046762::1714783281::0::1::::<><>::res://scripts/heartcontainer.gd
-texture_progress_bar.tscn::PackedScene::1101146873943525286::1714783281::0::1::::<><>::uid://bn2ds5xs5a625::::res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniUnder.png<>uid://b24wiwabm4l8k::::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/rounded/bar_rounded_CC_horizontal.png<>uid://b2t0w6quwc8vm::::res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniProgress.png<>res://scripts/barra_de_vida.gd
-::res://scripts/::1714782193
+::res://scenes/entities/player/::1714784769
+player.tscn::PackedScene::4244634682005587665::1714784769::0::1::::<><>::res://scripts/player.gd<>uid://byco2mirtb5dt::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_spritesheet.png<>uid://jwtxtvxmj5tc::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_run_spritesheet.png
+::res://scenes/UI/::1714784770
+healthbar.tscn::PackedScene::3225816781298068437::1714784770::0::1::::<><>::
+heart.tscn::PackedScene::7949601464707518581::1714784770::0::1::::<><>::res://scripts/heart.gd<>uid://c7f04wsmooyjn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/heart.png
+heartcontainer.tscn::PackedScene::5564510205789046762::1714784770::0::1::::<><>::res://scripts/heartcontainer.gd
+texture_progress_bar.tscn::PackedScene::1101146873943525286::1714784770::0::1::::<><>::uid://bn2ds5xs5a625::::res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniUnder.png<>uid://b24wiwabm4l8k::::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/rounded/bar_rounded_CC_horizontal.png<>uid://b2t0w6quwc8vm::::res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniProgress.png<>res://scripts/barra_de_vida.gd
+::res://scripts/::1714784680
 barra_de_vida.gd::GDScript::-1::1714782097::0::1::::<>TextureProgressBar<>::
 game.gd::GDScript::-1::1714718696::0::1::::<>Node2D<>::
-heart.gd::GDScript::-1::1714779650::0::1::::<>Panel<>::
-heartcontainer.gd::GDScript::-1::1714780544::0::1::::<>HBoxContainer<>::
-player.gd::GDScript::-1::1714778788::0::1::::<>CharacterBody2D<>::
+heart.gd::GDScript::-1::1714783670::0::1::::<>Panel<>::
+heartcontainer.gd::GDScript::-1::1714784543::0::1::::<>HBoxContainer<>::
+player.gd::GDScript::-1::1714784680::0::1::::<>CharacterBody2D<>::
 slime2.gd::GDScript::-1::1714767531::0::1::::<>CharacterBody2D<>::
