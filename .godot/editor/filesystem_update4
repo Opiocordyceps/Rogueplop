@@ -6,3 +6,8 @@ res://scenes/dungeon/dungeon.tscn
 res://scenes/dungeon/rooms/spawn.tscn
 res://scenes/dungeon/rooms/Door.tscn
 res://scenes/entities/enemies/Slime2.tscn
+res://scenes/dungeon/rooms/SpawnRoom0.tscn
+res://scenes/dungeon/rooms/room_1.tscn
+res://scenes/dungeon/rooms/EndRoom0.tscn
+res://scenes/dungeon/Rooms.gd
+res://scenes/dungeon/rooms/room_3.tscn
