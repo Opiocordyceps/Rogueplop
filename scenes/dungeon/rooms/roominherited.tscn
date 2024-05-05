@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8bosv54d61w8"]
+
+[ext_resource type="PackedScene" uid="uid://6e5gulxh7j2y" path="res://scenes/dungeon/rooms/Room.tscn" id="1_th4wy"]
+
+[node name="Roominherited" instance=ExtResource("1_th4wy")]
