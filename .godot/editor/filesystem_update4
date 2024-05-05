@@ -6,4 +6,3 @@ res://scenes/dungeon/dungeon.tscn
 res://scenes/dungeon/rooms/spawn.tscn
 res://scenes/dungeon/rooms/Door.tscn
 res://scenes/entities/enemies/Slime2.tscn
-res://scripts/slime2.gd
