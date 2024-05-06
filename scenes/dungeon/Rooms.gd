@@ -1,7 +1,7 @@
 extends Node2D
 
-const SPAWN_ROOMS: Array = [preload("res://scenes/dungeon/rooms/SpawnRoom0.tscn"), ]
-const INTERMEDIATE_ROOMS: Array = [preload("res://scenes/dungeon/rooms/room_0.tscn"), preload("res://scenes/dungeon/rooms/room_1.tscn"), preload("res://scenes/dungeon/rooms/room_3.tscn")]
+const SPAWN_ROOMS: Array = [preload("res://scenes/dungeon/rooms/SpawnRoom0.tscn"), preload("res://scenes/dungeon/rooms/SpawnRoom1.tscn")]
+const INTERMEDIATE_ROOMS: Array = [preload("res://scenes/dungeon/rooms/room_0.tscn"), preload("res://scenes/dungeon/rooms/room_1.tscn"), preload("res://scenes/dungeon/rooms/room_3.tscn"), preload("res://scenes/dungeon/rooms/room_4.tscn")]
 const SPECIAL_ROOMS: Array = [preload("res://scenes/dungeon/rooms/room_0.tscn")]
 const END_ROOMS: Array = [preload("res://scenes/dungeon/rooms/EndRoom0.tscn")]
 const SLIME_BOSS_SCENE: PackedScene = preload("res://scenes/dungeon/rooms/EndRoom0.tscn")
