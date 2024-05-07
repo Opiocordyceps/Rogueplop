@@ -53,15 +53,9 @@ func _spawn_rooms() -> void:
 #-----------Se obtienen ciertos indices para conectar las salas entre si
 			var previous_room_tilemap: TileMap = previous_room.get_node("TileMap")
 			var previous_room_door: StaticBody2D = previous_room.get_node("Doors/Door")
-<<<<<<< Updated upstream
-			var exit_tile_pos: Vector2i = previous_room_tilemap.local_to_map(previous_room_door.position) + Vector2i.UP * 2
-
-			var corridor_height: int = randi() % 5 + 2
 #-----------Segundo Ciclo For, se conectan las salas con los Tiles correspondientes al piso y paredes para formar un pasillo
-=======
 			var exit_tile_pos: Vector2i = previous_room_tilemap.local_to_map(previous_room_door.position)  + (Vector2i.UP * 2)
 			var corridor_height: int = (randi() % 5) + 2
->>>>>>> Stashed changes
 			for y in corridor_height:
 				previous_room_tilemap.set_cell(0, exit_tile_pos + Vector2i(-2, -y), 0, LEFT_WALL_TILE_INDEX)
 				previous_room_tilemap.set_cell(0, exit_tile_pos + Vector2i(-1, -y), 0, FLOOR_TILE_CORD)
@@ -69,12 +63,8 @@ func _spawn_rooms() -> void:
 				previous_room_tilemap.set_cell(0, exit_tile_pos + Vector2i(1, -y), 0, RIGHT_WALL_TILE_INDEX)
 
 			var room_tilemap: TileMap = room.get_node("TileMap")
-<<<<<<< Updated upstream
 			room.position = previous_room_door.global_position + Vector2.UP * room_tilemap.get_used_rect().size.y * TILE_SIZE + Vector2.UP * (1 + corridor_height) * TILE_SIZE + Vector2.LEFT * room_tilemap.local_to_map(room.get_node("Entrance/Marker2D2").position).x * TILE_SIZE
 #-------Se añade un nodo hijo y se almacena el valor de la sala ya recorrida
-=======
 			room.position = previous_room_door.global_position + (Vector2.UP * room_tilemap.get_used_rect().size.y * TILE_SIZE) + (Vector2.UP * (corridor_height + 1) * TILE_SIZE) + (Vector2.LEFT * room_tilemap.local_to_map(room.get_node("Entrance/Marker2D2").position).x * TILE_SIZE)
-
->>>>>>> Stashed changes
 		add_child(room)
 		previous_room = room
