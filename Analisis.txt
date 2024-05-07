@@ -1,0 +1,11 @@
+Este programa consiste tiene un monton de scripts, en su mayoria 
+codigo boilerplate o de Orden O(1), pero el algoritmo mas importante 
+es el de Generacion Procedural de los niveles, el cual posee 2 ciclos For,
+uno adentro del otro, lo que haria que el algoritmo fuera de orden O(n^2).
+El script que contiene este codigo se encuentra en res://scenes/dungeon/Rooms.gd
+Un analisis mas completo del diseño de este algoritmo se puede encontrar
+en forma de comentario de el mismo codigo.
+
+Cabe destacar que este codigo esta escrito en GDScript, el lenguaje nativo
+a este motor de Videojuegos. Este Lenguaje es sintacticamente parecido a
+Python.
