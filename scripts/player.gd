@@ -27,8 +27,9 @@ func _physics_process(delta):
 	velocity = direction * SPEED
 	move_and_slide()
 	if !dañado:
-		for area in colisiones:
-			dañadoPorEnemigo(area)
+		for area in hurtBox.get_overlapping_areas():
+			if area.name == "hitBox":
+				dañadoPorEnemigo(area)
 
 func dañadoPorEnemigo(area):
 	vidaActual -= 1
@@ -44,8 +45,8 @@ func dañadoPorEnemigo(area):
 	dañado = false
 
 func _on_hurt_box_area_entered(area):
-	if area.name == "hitBox":
-		colisiones.append(area)
+	if area.has_method("colec"):
+		area.colec()
 		
 func empuje(velocidadEnemigo: Vector2):
 	var direccionEmpuje = (velocidadEnemigo - velocity).normalized() * fuerzaEmpuje
@@ -53,6 +54,5 @@ func empuje(velocidadEnemigo: Vector2):
 	move_and_slide()
 
 
-func _on_hurt_box_area_exited(area):
-	colisiones.erase(area)
+func _on_hurt_box_area_exited(area):pass
 	

@@ -1,3 +1,6 @@
+res://Art/v1.1 dungeon crawler 16X16 pixel pack/props_itens
+res://scenes/items
+res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight
 C:/Users/juanp/Documents/GitHub/Rogueplop
 res://scenes/dungeon/rooms
 res://Autoloads
@@ -5,7 +8,6 @@ res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall
 res://scripts
 res://scenes/UI
 res://
-res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight
 res://scenes/entities/enemies
 res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime
 res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin

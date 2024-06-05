@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3f7em48fgx8o"]
+
+[ext_resource type="PackedScene" uid="uid://c27ps30g2v32e" path="res://scenes/items/Coleccionable.tscn" id="1_oe6n0"]
+[ext_resource type="Texture2D" uid="uid://dforxq7ds82k2" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/props_itens/potion_red.png" id="2_vdom7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbuq1"]
+resource_local_to_scene = true
+size = Vector2(10, 13)
+
+[node name="Potion" instance=ExtResource("1_oe6n0")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_tbuq1")
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(0, 0)
+scale = Vector2(1, 1)
+texture = ExtResource("2_vdom7")

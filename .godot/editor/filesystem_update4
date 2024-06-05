@@ -1,2 +1,12 @@
 res://MainMenu.tscn
-res://scenes/dungeon/Rooms.gd
+res://scripts/player.gd
+res://scenes/dungeon/rooms/EndRoom0.tscn
+res://scenes/dungeon/rooms/room_0.tscn
+res://scenes/entities/enemies/Slime2.tscn
+res://scenes/items/Coleccionable.tscn
+res://scripts/Coleccionable.gd
+res://scenes/items/potion.tscn
+res://scenes/dungeon/rooms/Room.tscn
+res://scenes/dungeon/rooms/SpawnRoom0.tscn
+res://scenes/dungeon/dungeon.tscn
+res://scenes/dungeon/rooms/spawn.tscn
