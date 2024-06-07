@@ -12,8 +12,10 @@ func maxCorazones(max: int):
 
 func actualizarCor(vidaActual: int):
 	var corazones = get_children()
-	
+	print(vidaActual)
 	for i in range(vidaActual):
+		print(i)
 		corazones[i].actualizar(true)
 	for i in range(vidaActual, corazones.size()):
+		print(i)
 		corazones[i].actualizar(false)

@@ -30,6 +30,13 @@ func _physics_process(delta):
 		for area in hurtBox.get_overlapping_areas():
 			if area.name == "hitBox":
 				dañadoPorEnemigo(area)
+			if area.name == "Potion":
+				pocionDeVida(area)
+
+func pocionDeVida(area):
+	if vidaActual<5:
+		vidaActual += 1
+		cambioVida.emit(vidaActual)
 
 func dañadoPorEnemigo(area):
 	vidaActual -= 1
