@@ -5,5 +5,5 @@ extends "res://scripts/Coleccionable.gd"
 func _ready():
 	animacion.play("idle_sword")
 	
-func colec():
-	super.colec()
+func colec(inventory: inventario):
+	super(inventory)

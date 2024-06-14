@@ -4,8 +4,9 @@ extends Control
 @onready var item: Panel = $inventario
 
 func _ready():
+	inventory.actualizado.connect(actualizar)
 	actualizar()
 
 
 func actualizar():
-	item.actualizar(inventory.item[0])
+	item.actualizar(inventory.items[0])

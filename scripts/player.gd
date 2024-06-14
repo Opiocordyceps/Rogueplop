@@ -54,7 +54,7 @@ func dañadoPorEnemigo(area):
 
 func _on_hurt_box_area_entered(area):
 	if area.has_method("colec"):
-		area.colec()
+		area.colec(inventory)
 		
 func empuje(velocidadEnemigo: Vector2):
 	var direccionEmpuje = (velocidadEnemigo - velocity).normalized() * fuerzaEmpuje

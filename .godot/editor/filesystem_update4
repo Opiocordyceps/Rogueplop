@@ -21,3 +21,7 @@ res://scenes/UI/healthbar.tscn
 res://scenes/UI/heartcontainer.tscn
 res://scenes/items/espada.tscn
 res://scenes/UI/ItemInventario.tscn
+res://scripts/Coleccionable.gd
+res://scripts/espada.gd
+res://inventario.gd
+res://scenes/UI/InventarioJugador.tres

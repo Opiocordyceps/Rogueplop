@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bngrkgplpgj6o"]
+[gd_scene load_steps=9 format=3 uid="uid://bngrkgplpgj6o"]
 
 [ext_resource type="PackedScene" uid="uid://c27ps30g2v32e" path="res://scenes/items/Coleccionable.tscn" id="1_3pexj"]
 [ext_resource type="Script" path="res://scripts/espada.gd" id="2_uxhbq"]
 [ext_resource type="Texture2D" uid="uid://dnqai01rto5io" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png" id="3_1enk3"]
+[ext_resource type="Resource" uid="uid://cb4f46wxxup18" path="res://scenes/UI/sword.tres" id="3_pfde3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c8ypm"]
 resource_local_to_scene = true
@@ -49,6 +50,7 @@ _data = {
 
 [node name="espada" instance=ExtResource("1_3pexj")]
 script = ExtResource("2_uxhbq")
+itemRes = ExtResource("3_pfde3")
 
 [node name="CollectableColisionBox" parent="." index="0"]
 shape = SubResource("RectangleShape2D_c8ypm")
