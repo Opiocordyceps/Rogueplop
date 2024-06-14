@@ -1,5 +1,8 @@
-AnimationPlayer
+Panel
+CenterContainer
+Control
 Sprite2D
+AnimationPlayer
 CollisionShape2D
 Area2D
 Marker2D
@@ -9,6 +12,3 @@ StaticBody2D
 TileMap
 Label
 TextureProgressBar
-HBoxContainer
-Panel
-Timer

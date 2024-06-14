@@ -8,6 +8,7 @@ var dañado: bool = false
 @onready var efectos = $efectos
 @onready var hurtBox = $hurtBox
 @onready var timer = $Timer
+@export var inventory: inventario
 var fuerzaEmpuje: int = 1000
 var colisiones = []
 

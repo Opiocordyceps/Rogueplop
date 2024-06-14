@@ -4,7 +4,7 @@ extends Panel
 func actualizar(relleno: bool):
 	if relleno == true:
 		print("a")
-		sprite.frame = 5
+		sprite.set_frame(5)
 	else:
 		print("b")
-		sprite.frame = 0
+		sprite.set_frame(0)

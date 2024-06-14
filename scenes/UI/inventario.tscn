@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd08v40rmppdb"]
+
+[ext_resource type="Script" path="res://scripts/inventario.gd" id="1_hniel"]
+[ext_resource type="PackedScene" uid="uid://cw5ojn5hc8ggy" path="res://scenes/UI/ItemInventario.tscn" id="1_rdntd"]
+
+[node name="inventario" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hniel")
+
+[node name="inventario" parent="." instance=ExtResource("1_rdntd")]
+layout_mode = 0

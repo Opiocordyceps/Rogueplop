@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b73q4816h86l0"]
+[gd_scene load_steps=6 format=3 uid="uid://b73q4816h86l0"]
 
 [ext_resource type="PackedScene" uid="uid://b1qerpdps0e62" path="res://scenes/entities/player/player.tscn" id="2_fe81g"]
 [ext_resource type="Script" path="res://scenes/dungeon/Rooms.gd" id="2_khm06"]
 [ext_resource type="PackedScene" uid="uid://byuiyktuam5uw" path="res://scenes/entities/enemies/Slime2.tscn" id="3_ymg1i"]
 [ext_resource type="PackedScene" uid="uid://cljqw1v1n2yog" path="res://scenes/UI/heartcontainer.tscn" id="5_7pi21"]
+[ext_resource type="PackedScene" uid="uid://dd08v40rmppdb" path="res://scenes/UI/inventario.tscn" id="5_ququr"]
 
 [node name="Dungeon" type="Node2D"]
 
@@ -25,3 +26,9 @@ offset_top = 22.0
 offset_right = -356.0
 offset_bottom = 62.0
 player = NodePath("../../player")
+
+[node name="inventario" parent="CanvasLayer" instance=ExtResource("5_ququr")]
+offset_left = 426.0
+offset_top = 204.0
+offset_right = 466.0
+offset_bottom = 244.0

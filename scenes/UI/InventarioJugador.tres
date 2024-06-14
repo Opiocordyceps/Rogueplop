@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="inventario" load_steps=3 format=3 uid="uid://di5y76mdjr8kg"]
+
+[ext_resource type="Resource" uid="uid://cb4f46wxxup18" path="res://scenes/UI/sword.tres" id="1_dn03r"]
+[ext_resource type="Script" path="res://inventario.gd" id="1_uq6i7"]
+
+[resource]
+resource_name = "inventarioJugador"
+script = ExtResource("1_uq6i7")
+item = Array[Resource("res://scripts/ItemInventario.gd")]([ExtResource("1_dn03r")])

@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw5ojn5hc8ggy"]
+
+[ext_resource type="Script" path="res://scripts/slot.gd" id="1_6mpd4"]
+[ext_resource type="Texture2D" uid="uid://c6ei2rrx7p8on" path="res://Art/SimplePixelArtUIpack/Artwork/Gray/rounded/Slot_rounded_GB.png" id="1_gwm2o"]
+
+[node name="inventario" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(26, 28)
+offset_right = 26.0
+offset_bottom = 28.0
+script = ExtResource("1_6mpd4")
+
+[node name="fondo" type="Sprite2D" parent="."]
+texture = ExtResource("1_gwm2o")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(26, 28)
+layout_mode = 0
+offset_right = 26.0
+offset_bottom = 28.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="item" type="Sprite2D" parent="CenterContainer/Panel"]
