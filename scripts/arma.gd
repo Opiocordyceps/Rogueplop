@@ -1,18 +1,36 @@
 extends Node2D
 
 var weapon: Area2D
+var item: ItemInventario
+var weapons: Array
+@export var inventory: inventario 
 
 func _ready():
-	if get_children().is_empty():return
-	
-	weapon = get_children()[0]
+	weapons = get_children()
+	for i in len(weapons):
+		weapon = get_children()[i]
+		desactivar()
+
+func _physics_process(delta):
+	arma()
+
+
+func arma():
+	if !inventory.items[0]: return
+	item = inventory.items[0]
+	if (item.name == "sword"):
+		weapon = get_children()[0]
+	if (item.name == "knife"):
+		weapon = get_children()[1]
 
 func activar():
 	if !weapon:return
 	visible = true
+	weapon.visible = true
 	weapon.activar()
 
 func desactivar():
 	if !weapon:return
+	weapon.visible = false
 	visible = false
 	weapon.desactivar()

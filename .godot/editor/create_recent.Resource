@@ -1,4 +1,4 @@
-inventario
 ItemInventario
+inventario
 item_inv
 GDScript

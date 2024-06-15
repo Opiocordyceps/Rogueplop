@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://6e5gulxh7j2y"]
+[gd_scene load_steps=15 format=3 uid="uid://6e5gulxh7j2y"]
 
 [ext_resource type="Script" path="res://scenes/dungeon/rooms/Room.gd" id="1_45ykp"]
 [ext_resource type="Texture2D" uid="uid://ly0hlrofy8kn" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="1_q6jrl"]
 [ext_resource type="PackedScene" uid="uid://b3f7em48fgx8o" path="res://scenes/items/potion.tscn" id="3_xggui"]
 [ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="4_1gk7m"]
+[ext_resource type="PackedScene" uid="uid://bvbw1de5wjk38" path="res://scenes/items/knife.tscn" id="5_1rw2k"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_eqk02"]
 vertices = PackedVector2Array(8, 0, -8, 0, -8, -8, 8, -8)
@@ -269,6 +270,7 @@ texture = ExtResource("1_q6jrl")
 resource_name = "Coleccionables"
 scenes/1/scene = ExtResource("3_xggui")
 scenes/2/scene = ExtResource("4_1gk7m")
+scenes/3/scene = ExtResource("5_1rw2k")
 
 [sub_resource type="TileSet" id="TileSet_qxp3a"]
 physics_layer_0/collision_layer = 3

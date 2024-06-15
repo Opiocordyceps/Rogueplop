@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://b1qerpdps0e62"]
+[gd_scene load_steps=32 format=3 uid="uid://b1qerpdps0e62"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_4v1ab"]
 [ext_resource type="Texture2D" uid="uid://byco2mirtb5dt" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_spritesheet.png" id="2_amr8l"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://jwtxtvxmj5tc" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_run_spritesheet.png" id="3_mkm57"]
 [ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="5_lt6dx"]
 [ext_resource type="Script" path="res://scripts/arma.gd" id="5_md2rm"]
+[ext_resource type="PackedScene" uid="uid://cecp55x0q628a" path="res://scenes/entities/player/knife_combate.tscn" id="7_ib100"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_urekg"]
 size = Vector2(16, 16)
@@ -37,62 +38,6 @@ tracks/1/keys = {
 "values": [Vector2(4, 5)]
 }
 
-[sub_resource type="Animation" id="Animation_183yl"]
-resource_name = "attackLeft"
-length = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("arma:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [4.71239, 3.92699, 3.14159]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("arma:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(-5, -2), Vector2(-7, 1), Vector2(-5, 4)]
-}
-
-[sub_resource type="Animation" id="Animation_rgf0b"]
-resource_name = "attackUp"
-length = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("arma:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-4, -5), Vector2(4, -5)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("arma:rotation")
-tracks/1/interp = 3
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [4.71239, 0.0]
-}
-
 [sub_resource type="Animation" id="Animation_12gy8"]
 resource_name = "attackDown"
 length = 0.2
@@ -121,6 +66,34 @@ tracks/1/keys = {
 "values": [Vector2(4, 5), Vector2(0, 7), Vector2(-4, 5)]
 }
 
+[sub_resource type="Animation" id="Animation_183yl"]
+resource_name = "attackLeft"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("arma:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [4.71239, 3.92699, 3.14159]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("arma:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-5, -2), Vector2(-7, 1), Vector2(-5, 4)]
+}
+
 [sub_resource type="Animation" id="Animation_fs0ab"]
 resource_name = "attackRight"
 length = 0.2
@@ -147,6 +120,34 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [0.0, 0.785398, 1.5708]
+}
+
+[sub_resource type="Animation" id="Animation_rgf0b"]
+resource_name = "attackUp"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("arma:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-4, -5), Vector2(4, -5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("arma:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [4.71239, 0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_73gl2"]
@@ -343,8 +344,11 @@ one_shot = true
 position = Vector2(4, 5)
 rotation = 1.5708
 script = ExtResource("5_md2rm")
+inventory = ExtResource("2_stv2s")
 
 [node name="espadaCombate" parent="arma" instance=ExtResource("5_lt6dx")]
+
+[node name="knifeCombate" parent="arma" instance=ExtResource("7_ib100")]
 
 [connection signal="area_entered" from="hurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_exited" from="hurtBox" to="." method="_on_hurt_box_area_exited"]

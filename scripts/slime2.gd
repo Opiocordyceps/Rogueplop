@@ -32,9 +32,9 @@ func _on_timer_timeout():
 
 func _on_hurt_box_area_entered(area):
 	if area == $hitBox: return
+	area.desactivar()
 	vidaActual -= 1
 	var direccionEmpuje = (area.get_parent().get_parent().velocity - velocity).normalized() * fuerzaEmpuje
-	area.desactivar
 	velocity = direccionEmpuje
 	move_and_slide()
 	if vidaActual == 0:

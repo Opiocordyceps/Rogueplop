@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemInventario" load_steps=3 format=3 uid="uid://byx0uu5yu6evf"]
+
+[ext_resource type="Script" path="res://scripts/ItemInventario.gd" id="1_83o3s"]
+[ext_resource type="Texture2D" uid="uid://x51vm5hktrha" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_knife.png" id="2_g6d5q"]
+
+[resource]
+script = ExtResource("1_83o3s")
+name = "knife"
+textura = ExtResource("2_g6d5q")

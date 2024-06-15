@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvbw1de5wjk38"]
+
+[ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="1_jls7u"]
+[ext_resource type="Texture2D" uid="uid://x51vm5hktrha" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_knife.png" id="2_lmiow"]
+[ext_resource type="Resource" uid="uid://byx0uu5yu6evf" path="res://scenes/UI/knife.tres" id="2_pggth"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruu1l"]
+resource_local_to_scene = true
+size = Vector2(16, 16)
+
+[node name="knife" instance=ExtResource("1_jls7u")]
+itemRes = ExtResource("2_pggth")
+
+[node name="CollectableColisionBox" parent="." index="0"]
+shape = SubResource("RectangleShape2D_ruu1l")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_lmiow")

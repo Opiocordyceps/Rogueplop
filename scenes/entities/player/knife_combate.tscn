@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cecp55x0q628a"]
+
+[ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="1_ta0cw"]
+[ext_resource type="Texture2D" uid="uid://x51vm5hktrha" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_knife.png" id="2_vj6po"]
+
+[node name="knifeCombate" instance=ExtResource("1_ta0cw")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(3, -3)
+texture = ExtResource("2_vj6po")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(2, -2)
+
+[node name="CollisionShape2D2" parent="." index="2"]
+position = Vector2(4, -5)

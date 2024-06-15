@@ -1,6 +1,7 @@
-res://scenes/UI/InventarioJugador.tres
-res://scenes/UI/sword.tres
+res://scripts/arma.gd
 res://scenes/entities/player/player.tscn
+res://scenes/UI/sword.tres
+res://scenes/UI/InventarioJugador.tres
 res://MainMenu.tscn
 res://scenes/dungeon/rooms/EndRoom0.tscn
 res://scenes/dungeon/rooms/room_0.tscn
@@ -19,7 +20,7 @@ res://scenes/items/espada.tscn
 res://scenes/UI/ItemInventario.tscn
 res://scenes/UI/inventario.tscn
 res://scenes/entities/player/espada_combate.tscn
-res://scripts/player.gd
-res://scripts/slime2.gd
-res://scripts/arma.gd
+res://scenes/entities/player/knife_combate.tscn
+res://scenes/items/knife.tscn
 res://scripts/espada_combate.gd
+res://Art/Medieval weapons pack/Read me.txt
