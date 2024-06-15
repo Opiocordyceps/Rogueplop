@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://byuiyktuam5uw"]
+[gd_scene load_steps=13 format=3 uid="uid://byuiyktuam5uw"]
 
 [ext_resource type="Script" path="res://scripts/slime2.gd" id="1_l3ib1"]
 [ext_resource type="Texture2D" uid="uid://crirmb06tnp8j" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png" id="2_7rwvq"]
@@ -54,10 +54,14 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t3ixh"]
-radius = 6.0
+radius = 6.08276
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_44qkm"]
 radius = 6.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vpwxl"]
+radius = 7.0
+height = 18.0
 
 [node name="slime" type="CharacterBody2D"]
 collision_layer = 2
@@ -83,9 +87,21 @@ wait_time = 0.5
 autostart = true
 
 [node name="hitBox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitBox"]
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_44qkm")
 
+[node name="hurtBox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtBox"]
+position = Vector2(0, 2)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_vpwxl")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="hurtBox" to="." method="_on_hurt_box_area_entered"]

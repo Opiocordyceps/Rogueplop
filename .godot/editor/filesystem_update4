@@ -1,10 +1,6 @@
-res://scenes/UI/inventario.tscn
-res://scenes/UI/new_resource.tres
+res://scenes/UI/InventarioJugador.tres
 res://scenes/UI/sword.tres
 res://scenes/entities/player/player.tscn
-res://scripts/inventario.gd
-res://scripts/player.gd
-res://scripts/slot.gd
 res://MainMenu.tscn
 res://scenes/dungeon/rooms/EndRoom0.tscn
 res://scenes/dungeon/rooms/room_0.tscn
@@ -21,7 +17,9 @@ res://scenes/UI/healthbar.tscn
 res://scenes/UI/heartcontainer.tscn
 res://scenes/items/espada.tscn
 res://scenes/UI/ItemInventario.tscn
-res://scripts/Coleccionable.gd
-res://scripts/espada.gd
-res://inventario.gd
-res://scenes/UI/InventarioJugador.tres
+res://scenes/UI/inventario.tscn
+res://scenes/entities/player/espada_combate.tscn
+res://scripts/player.gd
+res://scripts/slime2.gd
+res://scripts/arma.gd
+res://scripts/espada_combate.gd

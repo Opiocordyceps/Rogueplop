@@ -5,21 +5,34 @@ var maxVida = 5
 var dañado: bool = false
 @onready var vidaActual: int = maxVida
 @onready var animation = $AnimatedSprite2D
+@onready var arma = $arma
+@onready var atack = $Ataque
 @onready var efectos = $efectos
 @onready var hurtBox = $hurtBox
 @onready var timer = $Timer
 @export var inventory: inventario
 var fuerzaEmpuje: int = 1000
 var colisiones = []
+var ultimaDireccion: String = "Down"
+
+func _ready():
+	arma.visible = false
 
 func _physics_process(delta):
 	##Consigue las inputs de cualquier direccion
 	var direction = Input.get_vector("move_left","move_right","move_up","move_down")
 	##da vuelta al jugador en base a la direccion
+	ataque()	
 	if direction.x > 0:
+		ultimaDireccion = "Right"
 		animation.flip_h = false
 	elif direction.x < 0:
+		ultimaDireccion = "Left"
 		animation.flip_h = true
+	if direction.y > 0:
+		ultimaDireccion = "Down"
+	elif direction.y < 0:
+		ultimaDireccion = "Up"
 	#activa ciertas animaciones
 	if direction.x == 0 && direction.y == 0:
 		animation.play("idle")
@@ -33,6 +46,14 @@ func _physics_process(delta):
 				dañadoPorEnemigo(area)
 			if area.name == "Potion":
 				pocionDeVida(area)
+
+func ataque():
+	if !inventory.items[0]: return
+	elif Input.is_action_just_pressed("space"):
+		arma.activar()
+		atack.play("attack" +  ultimaDireccion)
+		await atack.animation_finished
+		arma.desactivar()
 
 func pocionDeVida(area):
 	if vidaActual<5:

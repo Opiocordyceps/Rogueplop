@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bogif2s5yoysj"]
+
+[ext_resource type="Script" path="res://scripts/espada_combate.gd" id="1_ecehx"]
+[ext_resource type="Texture2D" uid="uid://dnqai01rto5io" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png" id="1_lh6g3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rg0cu"]
+radius = 4.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xoe1a"]
+radius = 3.0
+
+[node name="espadaCombate" type="Area2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_ecehx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5, -4)
+texture = ExtResource("1_lh6g3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, -4)
+shape = SubResource("CircleShape2D_rg0cu")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(9, -8)
+shape = SubResource("CircleShape2D_xoe1a")
