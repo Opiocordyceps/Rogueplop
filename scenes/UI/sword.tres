@@ -6,4 +6,5 @@
 [resource]
 script = ExtResource("1_mmg32")
 name = "sword"
+type = "sword"
 textura = ExtResource("2_6b3jg")

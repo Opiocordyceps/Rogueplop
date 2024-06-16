@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemInventario" load_steps=4 format=3 uid="uid://c6tpcrgkodebc"]
+
+[ext_resource type="Script" path="res://scripts/ItemInventario.gd" id="1_t0xvr"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_owk4g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urvvc"]
+atlas = ExtResource("2_owk4g")
+region = Rect2(28, 47, 9, 29)
+
+[resource]
+script = ExtResource("1_t0xvr")
+name = "lanza"
+type = "estoque"
+textura = SubResource("AtlasTexture_urvvc")

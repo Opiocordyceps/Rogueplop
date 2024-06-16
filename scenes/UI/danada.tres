@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemInventario" load_steps=4 format=3 uid="uid://cyv6yovjoiuw5"]
+
+[ext_resource type="Script" path="res://scripts/ItemInventario.gd" id="1_jntdd"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_a4at6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqxe0"]
+atlas = ExtResource("2_a4at6")
+region = Rect2(90, 2, 11, 19)
+
+[resource]
+script = ExtResource("1_jntdd")
+name = "danada"
+type = "sword"
+textura = SubResource("AtlasTexture_hqxe0")

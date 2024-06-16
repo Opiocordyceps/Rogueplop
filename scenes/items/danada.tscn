@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://syk7s52tmxgm"]
+
+[ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="1_3pjxx"]
+[ext_resource type="Resource" uid="uid://cyv6yovjoiuw5" path="res://scenes/UI/danada.tres" id="2_4q1pu"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_a8fw8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mrnx1"]
+resource_local_to_scene = true
+size = Vector2(16, 16)
+
+[node name="danada" instance=ExtResource("1_3pjxx")]
+itemRes = ExtResource("2_4q1pu")
+
+[node name="CollectableColisionBox" parent="." index="0"]
+shape = SubResource("RectangleShape2D_mrnx1")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_a8fw8")
+region_enabled = true
+region_rect = Rect2(91, 1, 9, 19)

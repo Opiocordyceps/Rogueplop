@@ -18,12 +18,10 @@ func _physics_process(delta):
 func arma():
 	if !inventory.items[0]: return
 	item = inventory.items[0]
-	if (item.name == "sword"):
+	if (item.name == "estocada"):
 		weapon = get_children()[0]
-	if (item.name == "knife"):
+	if (item.name == "lanza"):
 		weapon = get_children()[1]
-	if (item.name == "danada"):
-		weapon = get_children()[2]
 
 func activar():
 	if !weapon:return

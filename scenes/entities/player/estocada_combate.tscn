@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c152jtmg780se"]
+
+[ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="1_0jb11"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_eqsks"]
+
+[node name="estocadaCombate" instance=ExtResource("1_0jb11")]
+
+[node name="Sprite2D" parent="." index="0"]
+rotation = 0.785398
+texture = ExtResource("2_eqsks")
+region_enabled = true
+region_rect = Rect2(77, 1, 13, 21)

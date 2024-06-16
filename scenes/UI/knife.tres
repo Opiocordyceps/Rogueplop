@@ -6,4 +6,5 @@
 [resource]
 script = ExtResource("1_83o3s")
 name = "knife"
+type = "sword"
 textura = ExtResource("2_g6d5q")

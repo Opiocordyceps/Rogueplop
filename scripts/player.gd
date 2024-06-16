@@ -5,7 +5,8 @@ var maxVida = 5
 var dañado: bool = false
 @onready var vidaActual: int = maxVida
 @onready var animation = $AnimatedSprite2D
-@onready var arma = $arma
+@onready var espada = $espada
+@onready var estoque = $estoque
 @onready var atack = $Ataque
 @onready var efectos = $efectos
 @onready var hurtBox = $hurtBox
@@ -16,7 +17,7 @@ var colisiones = []
 var ultimaDireccion: String = "Down"
 
 func _ready():
-	arma.visible = false
+	espada.visible = false
 
 func _physics_process(delta):
 	##Consigue las inputs de cualquier direccion
@@ -50,10 +51,16 @@ func _physics_process(delta):
 func ataque():
 	if !inventory.items[0]: return
 	elif Input.is_action_just_pressed("space"):
-		arma.activar()
-		atack.play("attack" +  ultimaDireccion)
-		await atack.animation_finished
-		arma.desactivar()
+		if inventory.items[0].type == "sword":
+			espada.activar()
+			atack.play("attack" +  ultimaDireccion)
+			await atack.animation_finished
+			espada.desactivar()
+		if inventory.items[0].type == "estoque":
+			estoque.activar()
+			atack.play("thrust" +  ultimaDireccion)
+			await atack.animation_finished
+			estoque.desactivar()
 
 func pocionDeVida(area):
 	if vidaActual<5:

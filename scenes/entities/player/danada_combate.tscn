@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp3oua44plv2s"]
+
+[ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="1_pnqnh"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_t10u3"]
+
+[node name="danadaCombate" instance=ExtResource("1_pnqnh")]
+
+[node name="Sprite2D" parent="." index="0"]
+rotation = 0.785398
+texture = ExtResource("2_t10u3")
+region_enabled = true
+region_rect = Rect2(91, 1, 9, 19)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(4, -4)
+
+[node name="CollisionShape2D2" parent="." index="2"]
+position = Vector2(8, -8)

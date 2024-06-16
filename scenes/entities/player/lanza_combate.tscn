@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cphedcr5sa0au"]
+
+[ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="1_b0606"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_k4phx"]
+
+[node name="lanzaCombate" instance=ExtResource("1_b0606")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(0, -8)
+texture = ExtResource("2_k4phx")
+region_enabled = true
+region_rect = Rect2(30, 50, 5, 24)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, -13)
+
+[node name="CollisionShape2D2" parent="." index="2"]
+position = Vector2(0, -17)

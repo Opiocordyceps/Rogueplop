@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://xx02l4i2q7pp"]
+
+[ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="1_onw2d"]
+[ext_resource type="Resource" uid="uid://bktbh1ag3k2w5" path="res://scenes/UI/estocada.tres" id="2_lgt3l"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_y0l3v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1jluo"]
+resource_local_to_scene = true
+size = Vector2(16, 16)
+
+[node name="estocada" instance=ExtResource("1_onw2d")]
+itemRes = ExtResource("2_lgt3l")
+
+[node name="CollectableColisionBox" parent="." index="0"]
+shape = SubResource("RectangleShape2D_1jluo")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_y0l3v")
+region_enabled = true
+region_rect = Rect2(79, 1, 9, 21)
