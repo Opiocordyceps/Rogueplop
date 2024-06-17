@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://d27fvaxut610u"]
+
+[ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="1_mm6ia"]
+[ext_resource type="Texture2D" uid="uid://ck1xlkfk6wq34" path="res://Art/weapon pack/Only weapons (Beginning ).png" id="2_ge7gn"]
+[ext_resource type="Resource" uid="uid://cki221fde88u2" path="res://scenes/UI/bible.tres" id="2_klg3q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_igtdv"]
+resource_local_to_scene = true
+size = Vector2(16, 16)
+
+[node name="bible" instance=ExtResource("1_mm6ia")]
+itemRes = ExtResource("2_klg3q")
+
+[node name="CollectableColisionBox" parent="." index="0"]
+shape = SubResource("RectangleShape2D_igtdv")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_ge7gn")
+region_enabled = true
+region_rect = Rect2(129, 95, 14, 18)

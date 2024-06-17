@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemInventario" load_steps=4 format=3 uid="uid://cki221fde88u2"]
+
+[ext_resource type="Script" path="res://scripts/ItemInventario.gd" id="1_4naxp"]
+[ext_resource type="Texture2D" uid="uid://ck1xlkfk6wq34" path="res://Art/weapon pack/Only weapons (Beginning ).png" id="2_ny2yv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vu4v0"]
+atlas = ExtResource("2_ny2yv")
+region = Rect2(128, 96, 15, 16)
+
+[resource]
+script = ExtResource("1_4naxp")
+name = "bible"
+type = "heavy"
+textura = SubResource("AtlasTexture_vu4v0")

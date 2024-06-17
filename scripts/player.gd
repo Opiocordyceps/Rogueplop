@@ -7,6 +7,7 @@ var dañado: bool = false
 @onready var animation = $AnimatedSprite2D
 @onready var espada = $espada
 @onready var estoque = $estoque
+@onready var heavy = $heavy
 @onready var atack = $Ataque
 @onready var efectos = $efectos
 @onready var hurtBox = $hurtBox
@@ -61,6 +62,11 @@ func ataque():
 			atack.play("thrust" +  ultimaDireccion)
 			await atack.animation_finished
 			estoque.desactivar()
+		if inventory.items[0].type == "heavy":
+			heavy.activar()
+			atack.play("heavy" +  ultimaDireccion)
+			await atack.animation_finished
+			heavy.desactivar()
 
 func pocionDeVida(area):
 	if vidaActual<5:

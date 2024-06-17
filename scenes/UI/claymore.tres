@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemInventario" load_steps=4 format=3 uid="uid://bgnf6g0ltqy6s"]
+
+[ext_resource type="Script" path="res://scripts/ItemInventario.gd" id="1_b7iio"]
+[ext_resource type="Texture2D" uid="uid://ck1xlkfk6wq34" path="res://Art/weapon pack/Only weapons (Beginning ).png" id="2_3nyyo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2irt"]
+atlas = ExtResource("2_3nyyo")
+region = Rect2(79, 0, 18, 17)
+
+[resource]
+script = ExtResource("1_b7iio")
+name = "claymore"
+type = "heavy"
+textura = SubResource("AtlasTexture_w2irt")

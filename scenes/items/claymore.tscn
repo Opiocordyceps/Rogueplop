@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2sehgydrow1k"]
+
+[ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="1_di1sa"]
+[ext_resource type="Resource" uid="uid://bgnf6g0ltqy6s" path="res://scenes/UI/claymore.tres" id="2_hoqhv"]
+[ext_resource type="Texture2D" uid="uid://ck1xlkfk6wq34" path="res://Art/weapon pack/Only weapons (Beginning ).png" id="2_nfqdo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w7gyg"]
+resource_local_to_scene = true
+size = Vector2(20, 19)
+
+[node name="claymore" instance=ExtResource("1_di1sa")]
+itemRes = ExtResource("2_hoqhv")
+
+[node name="CollectableColisionBox" parent="." index="0"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_w7gyg")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_nfqdo")
+region_enabled = true
+region_rect = Rect2(79, 0, 17, 16)

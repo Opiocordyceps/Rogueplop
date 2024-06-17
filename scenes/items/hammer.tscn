@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://weruhjr51xsy"]
+
+[ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="1_bytyo"]
+[ext_resource type="Resource" uid="uid://bjv2t361auxk" path="res://scenes/UI/hammer.tres" id="2_f2a4v"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_kj0rv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wl2pb"]
+resource_local_to_scene = true
+size = Vector2(16, 16)
+
+[node name="hammer" instance=ExtResource("1_bytyo")]
+itemRes = ExtResource("2_f2a4v")
+
+[node name="CollectableColisionBox" parent="." index="0"]
+shape = SubResource("RectangleShape2D_wl2pb")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_kj0rv")
+region_enabled = true
+region_rect = Rect2(115, 20, 15, 25)

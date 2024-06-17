@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://fdctqxyxn4k6"]
+
+[ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="1_4psia"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_40ee1"]
+[ext_resource type="Resource" uid="uid://c3r2ch83mrjrc" path="res://scenes/UI/glaive.tres" id="2_be1f2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ckdkk"]
+resource_local_to_scene = true
+size = Vector2(16, 16)
+
+[node name="glaive" instance=ExtResource("1_4psia")]
+itemRes = ExtResource("2_be1f2")
+
+[node name="CollectableColisionBox" parent="." index="0"]
+shape = SubResource("RectangleShape2D_ckdkk")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_40ee1")
+region_enabled = true
+region_rect = Rect2(83, 21, 13, 26)

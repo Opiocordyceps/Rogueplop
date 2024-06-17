@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://drlgtms8yfuu1"]
+
+[ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="1_35go8"]
+[ext_resource type="Texture2D" uid="uid://b4k7hmy7r2fan" path="res://Art/SwordTember2023-RunicPixels/SwordtemberSword24.png" id="2_jgxtl"]
+
+[node name="bibleCombate" instance=ExtResource("1_35go8")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(0.686322, -12.7168)
+rotation = -0.785398
+scale = Vector2(0.889753, 0.92312)
+texture = ExtResource("2_jgxtl")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, -13)
+
+[node name="CollisionShape2D2" parent="." index="2"]
+position = Vector2(0, -24)

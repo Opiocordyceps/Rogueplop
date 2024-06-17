@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://8fltu3umaaa0"]
+
+[ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="1_mei0b"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_vfnes"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yva2h"]
+size = Vector2(13.5, 8.75)
+
+[node name="hammerCombate" instance=ExtResource("1_mei0b")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(2, -8)
+scale = Vector2(1, 1.18182)
+texture = ExtResource("2_vfnes")
+region_enabled = true
+region_rect = Rect2(115, 22, 15, 22)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(2, -10)
+
+[node name="CollisionShape2D2" parent="." index="2"]
+position = Vector2(2, -16)
+shape = SubResource("RectangleShape2D_yva2h")

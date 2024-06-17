@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemInventario" load_steps=4 format=3 uid="uid://bjv2t361auxk"]
+
+[ext_resource type="Script" path="res://scripts/ItemInventario.gd" id="1_6x0rk"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_2enrq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_el7ss"]
+atlas = ExtResource("2_2enrq")
+region = Rect2(115, 22, 15, 23)
+
+[resource]
+script = ExtResource("1_6x0rk")
+name = "hammer"
+type = "heavy"
+textura = SubResource("AtlasTexture_el7ss")

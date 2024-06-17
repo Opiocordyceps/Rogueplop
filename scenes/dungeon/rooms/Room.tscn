@@ -1,13 +1,17 @@
-[gd_scene load_steps=18 format=3 uid="uid://6e5gulxh7j2y"]
+[gd_scene load_steps=22 format=3 uid="uid://6e5gulxh7j2y"]
 
 [ext_resource type="Script" path="res://scenes/dungeon/rooms/Room.gd" id="1_45ykp"]
 [ext_resource type="Texture2D" uid="uid://ly0hlrofy8kn" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="1_q6jrl"]
 [ext_resource type="PackedScene" uid="uid://b3f7em48fgx8o" path="res://scenes/items/potion.tscn" id="3_xggui"]
 [ext_resource type="PackedScene" uid="uid://bngrkgplpgj6o" path="res://scenes/items/espada.tscn" id="4_1gk7m"]
+[ext_resource type="PackedScene" uid="uid://d27fvaxut610u" path="res://scenes/items/bible.tscn" id="4_kwlg4"]
 [ext_resource type="PackedScene" uid="uid://bvbw1de5wjk38" path="res://scenes/items/knife.tscn" id="5_1rw2k"]
 [ext_resource type="PackedScene" uid="uid://syk7s52tmxgm" path="res://scenes/items/danada.tscn" id="6_j81bv"]
 [ext_resource type="PackedScene" uid="uid://xx02l4i2q7pp" path="res://scenes/items/estocada.tscn" id="7_44e8i"]
 [ext_resource type="PackedScene" uid="uid://bliiivoakfn8d" path="res://scenes/items/lanza.tscn" id="8_5mv2y"]
+[ext_resource type="PackedScene" uid="uid://fdctqxyxn4k6" path="res://scenes/items/glaive.tscn" id="9_rw1u2"]
+[ext_resource type="PackedScene" uid="uid://weruhjr51xsy" path="res://scenes/items/hammer.tscn" id="10_b8f8j"]
+[ext_resource type="PackedScene" uid="uid://d2sehgydrow1k" path="res://scenes/items/claymore.tscn" id="11_20qwb"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_eqk02"]
 vertices = PackedVector2Array(8, 0, -8, 0, -8, -8, 8, -8)
@@ -277,6 +281,10 @@ scenes/3/scene = ExtResource("5_1rw2k")
 scenes/4/scene = ExtResource("6_j81bv")
 scenes/5/scene = ExtResource("7_44e8i")
 scenes/6/scene = ExtResource("8_5mv2y")
+scenes/7/scene = ExtResource("9_rw1u2")
+scenes/8/scene = ExtResource("10_b8f8j")
+scenes/9/scene = ExtResource("11_20qwb")
+scenes/10/scene = ExtResource("4_kwlg4")
 
 [sub_resource type="TileSet" id="TileSet_qxp3a"]
 physics_layer_0/collision_layer = 3

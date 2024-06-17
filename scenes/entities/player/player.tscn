@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://b1qerpdps0e62"]
+[gd_scene load_steps=49 format=3 uid="uid://b1qerpdps0e62"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_4v1ab"]
 [ext_resource type="Texture2D" uid="uid://byco2mirtb5dt" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_spritesheet.png" id="2_amr8l"]
@@ -11,6 +11,11 @@
 [ext_resource type="Script" path="res://scripts/estoque.gd" id="9_hc04u"]
 [ext_resource type="PackedScene" uid="uid://c152jtmg780se" path="res://scenes/entities/player/estocada_combate.tscn" id="10_8etjm"]
 [ext_resource type="PackedScene" uid="uid://cphedcr5sa0au" path="res://scenes/entities/player/lanza_combate.tscn" id="11_smkkd"]
+[ext_resource type="PackedScene" uid="uid://bqy6g0kfxpnbx" path="res://scenes/entities/player/glaive_combate.tscn" id="12_gra4p"]
+[ext_resource type="Script" path="res://scenes/entities/player/heavy.gd" id="13_q2obj"]
+[ext_resource type="PackedScene" uid="uid://8fltu3umaaa0" path="res://scenes/entities/player/hammer_combate.tscn" id="14_lnroi"]
+[ext_resource type="PackedScene" uid="uid://b5apsjju1887a" path="res://scenes/entities/player/claymore_combate.tscn" id="15_8bu0x"]
+[ext_resource type="PackedScene" uid="uid://drlgtms8yfuu1" path="res://scenes/entities/player/bible_combate.tscn" id="16_0nj1o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_urekg"]
 size = Vector2(16, 16)
@@ -60,6 +65,54 @@ tracks/3/path = NodePath("estoque:rotation")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("heavy/hammerCombate:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(5, -5)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("heavy/hammerCombate:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("heavy:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("heavy:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -178,34 +231,6 @@ tracks/1/keys = {
 "values": [Vector2(-4, -5), Vector2(4, -5)]
 }
 
-[sub_resource type="Animation" id="Animation_huu1v"]
-resource_name = "thrustRight"
-length = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("estoque:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(5, 0), Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("estoque:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.0, 0.0, 0.0]
-}
-
 [sub_resource type="Animation" id="Animation_a4grw"]
 resource_name = "thrustDown"
 length = 0.2
@@ -262,6 +287,34 @@ tracks/1/keys = {
 "values": [3.14159, 3.14159, 3.14159]
 }
 
+[sub_resource type="Animation" id="Animation_huu1v"]
+resource_name = "thrustRight"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("estoque:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(5, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("estoque:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0]
+}
+
 [sub_resource type="Animation" id="Animation_v1hm8"]
 resource_name = "thrustUp"
 length = 0.2
@@ -290,6 +343,118 @@ tracks/1/keys = {
 "values": [4.71239, 4.71239, 4.71239]
 }
 
+[sub_resource type="Animation" id="Animation_7eqbu"]
+resource_name = "heavyRight"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("heavy:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(5, -5), Vector2(5, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("heavy:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 3.14159]
+}
+
+[sub_resource type="Animation" id="Animation_e5yy2"]
+resource_name = "heavyLeft"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("heavy:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, -5), Vector2(-5, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("heavy:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -3.14159]
+}
+
+[sub_resource type="Animation" id="Animation_3bmte"]
+resource_name = "heavyUp"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("heavy:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, -5), Vector2(5, -5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("heavy:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.5708, 1.5708]
+}
+
+[sub_resource type="Animation" id="Animation_mxfhy"]
+resource_name = "heavyDown"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("heavy:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(5, 5), Vector2(-5, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("heavy:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.5708, 4.71239]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_73gl2"]
 _data = {
 "RESET": SubResource("Animation_nm28h"),
@@ -297,6 +462,10 @@ _data = {
 "attackLeft": SubResource("Animation_183yl"),
 "attackRight": SubResource("Animation_fs0ab"),
 "attackUp": SubResource("Animation_rgf0b"),
+"heavyDown": SubResource("Animation_mxfhy"),
+"heavyLeft": SubResource("Animation_e5yy2"),
+"heavyRight": SubResource("Animation_7eqbu"),
+"heavyUp": SubResource("Animation_3bmte"),
 "thrustDown": SubResource("Animation_a4grw"),
 "thrustLeft": SubResource("Animation_hrxkl"),
 "thrustRight": SubResource("Animation_huu1v"),
@@ -458,6 +627,8 @@ libraries = {
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 clip_children = 2
+position = Vector2(-1, -0.5)
+scale = Vector2(1.125, 1.0625)
 sprite_frames = SubResource("SpriteFrames_jfd47")
 animation = &"idle"
 
@@ -508,6 +679,22 @@ rotation = 0.785398
 [node name="lanzaCombate" parent="estoque" instance=ExtResource("11_smkkd")]
 position = Vector2(7, -8.34742e-08)
 rotation = 1.5708
+
+[node name="glaiveCombate" parent="estoque" instance=ExtResource("12_gra4p")]
+position = Vector2(7, 0)
+rotation = 1.5708
+
+[node name="heavy" type="Node2D" parent="."]
+script = ExtResource("13_q2obj")
+inventory = ExtResource("2_stv2s")
+
+[node name="hammerCombate" parent="heavy" instance=ExtResource("14_lnroi")]
+position = Vector2(5, -5)
+
+[node name="claymoreCombate" parent="heavy" instance=ExtResource("15_8bu0x")]
+position = Vector2(0, 4.76837e-07)
+
+[node name="bibleCombate" parent="heavy" instance=ExtResource("16_0nj1o")]
 
 [connection signal="area_entered" from="hurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_exited" from="hurtBox" to="." method="_on_hurt_box_area_exited"]

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5apsjju1887a"]
+
+[ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="1_42r1y"]
+[ext_resource type="Texture2D" uid="uid://ck1xlkfk6wq34" path="res://Art/weapon pack/Only weapons (Beginning ).png" id="2_3t6qy"]
+
+[node name="claymoreCombate" instance=ExtResource("1_42r1y")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(-0.918525, -9.91852)
+rotation = -0.785398
+scale = Vector2(1.11111, 1.0625)
+texture = ExtResource("2_3t6qy")
+region_enabled = true
+region_rect = Rect2(78, 0, 18, 16)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, -9)
+
+[node name="CollisionShape2D2" parent="." index="2"]
+position = Vector2(0, -18)

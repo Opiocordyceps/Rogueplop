@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqy6g0kfxpnbx"]
+
+[ext_resource type="PackedScene" uid="uid://bogif2s5yoysj" path="res://scenes/entities/player/espada_combate.tscn" id="1_6v34t"]
+[ext_resource type="Texture2D" uid="uid://d6vtvkol2sg8" path="res://Art/Medieval weapons pack/steel/outline original.png" id="2_hqtop"]
+
+[node name="glaiveCombate" instance=ExtResource("1_6v34t")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(1, -9)
+texture = ExtResource("2_hqtop")
+region_enabled = true
+region_rect = Rect2(85, 21, 10, 24)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(1, -12)
+
+[node name="CollisionShape2D2" parent="." index="2"]
+position = Vector2(1, -18)

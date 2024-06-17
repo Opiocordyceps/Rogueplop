@@ -22,6 +22,8 @@ func arma():
 		weapon = get_children()[0]
 	if (item.name == "lanza"):
 		weapon = get_children()[1]
+	if (item.name == "glaive"):
+		weapon = get_children()[2]
 
 func activar():
 	if !weapon:return
