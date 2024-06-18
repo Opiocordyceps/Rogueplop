@@ -1,6 +1,6 @@
 extends Area2D
-@onready var cajaColision1 = $CollisionShape2D
-@onready var cajaColision2 = $CollisionShape2D2
+@onready var cajaColision1 = $HitBox1
+@onready var cajaColision2 = $HitBox2
 
 func activar():
 	cajaColision1.disabled = false

@@ -10,6 +10,8 @@ var fuerzaEmpuje: int = 1500
 @onready var nav:= $NavigationAgent2D as NavigationAgent2D
 @onready var animation = $AnimatedSprite2D
 
+func _ready():
+	parent()
 
 func _physics_process(delta: float)->void:
 	#ocupa una funcion de navegator agent en orden de actualizar la direccion
@@ -29,9 +31,12 @@ func makepath() -> void:
 func _on_timer_timeout():
 	makepath()
 
+func parent():
+	if !get_parent():return
+	player = get_parent().get_parent().get_parent().get_parent().get_parent().get_node("player")
 
 func _on_hurt_box_area_entered(area):
-	if area == $hitBox: return
+	if area.name == "hitBox": return
 	area.desactivar()
 	vidaActual -= 1
 	var direccionEmpuje = (area.get_parent().get_parent().velocity - velocity).normalized() * fuerzaEmpuje
@@ -39,5 +44,4 @@ func _on_hurt_box_area_entered(area):
 	move_and_slide()
 	if vidaActual == 0:
 		$hitBox.set_deferred("monitorable", false)	
-		
 		queue_free()

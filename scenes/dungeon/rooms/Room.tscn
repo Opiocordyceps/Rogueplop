@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://6e5gulxh7j2y"]
+[gd_scene load_steps=24 format=3 uid="uid://6e5gulxh7j2y"]
 
 [ext_resource type="Script" path="res://scenes/dungeon/rooms/Room.gd" id="1_45ykp"]
 [ext_resource type="Texture2D" uid="uid://ly0hlrofy8kn" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="1_q6jrl"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://fdctqxyxn4k6" path="res://scenes/items/glaive.tscn" id="9_rw1u2"]
 [ext_resource type="PackedScene" uid="uid://weruhjr51xsy" path="res://scenes/items/hammer.tscn" id="10_b8f8j"]
 [ext_resource type="PackedScene" uid="uid://d2sehgydrow1k" path="res://scenes/items/claymore.tscn" id="11_20qwb"]
+[ext_resource type="PackedScene" uid="uid://byuiyktuam5uw" path="res://scenes/entities/enemies/Slime2.tscn" id="13_2mcj2"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_eqk02"]
 vertices = PackedVector2Array(8, 0, -8, 0, -8, -8, 8, -8)
@@ -286,12 +287,17 @@ scenes/8/scene = ExtResource("10_b8f8j")
 scenes/9/scene = ExtResource("11_20qwb")
 scenes/10/scene = ExtResource("4_kwlg4")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_shntw"]
+resource_name = "Enemies"
+scenes/1/scene = ExtResource("13_2mcj2")
+
 [sub_resource type="TileSet" id="TileSet_qxp3a"]
 physics_layer_0/collision_layer = 3
 physics_layer_0/collision_mask = 3
 navigation_layer_0/layers = 1
 sources/0 = SubResource("TileSetAtlasSource_4c2um")
 sources/1 = SubResource("TileSetScenesCollectionSource_fqjo8")
+sources/2 = SubResource("TileSetScenesCollectionSource_shntw")
 
 [node name="Room" type="Node2D"]
 script = ExtResource("1_45ykp")
@@ -302,6 +308,8 @@ format = 2
 layer_0/name = "objects"
 layer_1/name = "colecccionables"
 layer_1/tile_data = PackedInt32Array()
+layer_2/name = "enemies"
+layer_2/tile_data = PackedInt32Array()
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_qxp3a")

@@ -10,9 +10,3 @@ position = Vector2(0.686322, -12.7168)
 rotation = -0.785398
 scale = Vector2(0.889753, 0.92312)
 texture = ExtResource("2_jgxtl")
-
-[node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(0, -13)
-
-[node name="CollisionShape2D2" parent="." index="2"]
-position = Vector2(0, -24)

@@ -10,9 +10,3 @@ position = Vector2(1, -7)
 texture = ExtResource("2_k4phx")
 region_enabled = true
 region_rect = Rect2(30, 50, 5, 24)
-
-[node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(1, -12)
-
-[node name="CollisionShape2D2" parent="." index="2"]
-position = Vector2(1, -16)

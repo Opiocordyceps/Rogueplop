@@ -10,9 +10,3 @@ rotation = 0.785398
 texture = ExtResource("2_t10u3")
 region_enabled = true
 region_rect = Rect2(91, 1, 9, 19)
-
-[node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(4, -4)
-
-[node name="CollisionShape2D2" parent="." index="2"]
-position = Vector2(8, -8)
