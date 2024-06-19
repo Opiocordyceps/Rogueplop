@@ -6,7 +6,13 @@
 [node name="bibleCombate" instance=ExtResource("1_35go8")]
 
 [node name="Sprite2D" parent="." index="0"]
-position = Vector2(0.686322, -12.7168)
+position = Vector2(0.83514, -11.8239)
 rotation = -0.785398
-scale = Vector2(0.889753, 0.92312)
+scale = Vector2(0.856868, 0.877081)
 texture = ExtResource("2_jgxtl")
+
+[node name="HitBox1" parent="." index="1"]
+position = Vector2(0, -24)
+
+[node name="HitBox2" parent="." index="2"]
+position = Vector2(0, -14)

@@ -12,3 +12,9 @@ scale = Vector2(1.11111, 1.0625)
 texture = ExtResource("2_3t6qy")
 region_enabled = true
 region_rect = Rect2(78, 0, 18, 16)
+
+[node name="HitBox1" parent="." index="1"]
+position = Vector2(0, -19)
+
+[node name="HitBox2" parent="." index="2"]
+position = Vector2(0, -11)

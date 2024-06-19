@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://dnqai01rto5io" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png" id="1_lh6g3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rg0cu"]
-radius = 7.0
+radius = 4.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xoe1a"]
-radius = 6.0
+radius = 5.0
 
 [node name="espadaCombate" type="Area2D"]
 collision_layer = 4
@@ -19,9 +19,9 @@ position = Vector2(5, -4)
 texture = ExtResource("1_lh6g3")
 
 [node name="HitBox1" type="CollisionShape2D" parent="."]
-position = Vector2(5, -4)
+position = Vector2(9, -8)
 shape = SubResource("CircleShape2D_rg0cu")
 
 [node name="HitBox2" type="CollisionShape2D" parent="."]
-position = Vector2(9, -8)
+position = Vector2(5, -4)
 shape = SubResource("CircleShape2D_xoe1a")

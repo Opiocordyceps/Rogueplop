@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718744142
+::res://::1718824737
 Analisis.txt::TextFile::-1::1715047079::0::1::::<><>::
 game.tscn::PackedScene::618965156821261148::1714784829::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>res://scripts/game.gd
 icon.svg::CompressedTexture2D::3858921828071250356::1714682121::1714682121::1::::<><>::
 inventario.gd::GDScript::-1::1718329431::0::1::::inventario<>Resource<>::
 MainMenu.gd::GDScript::-1::1714858890::0::1::::<>Control<>::
-MainMenu.tscn::PackedScene::8503980231033108711::1718744062::0::1::::<><>::res://MainMenu.gd
+MainMenu.tscn::PackedScene::8503980231033108711::1718745093::0::1::::<><>::res://MainMenu.gd
 new_script.gd::GDScript::-1::1717902143::0::1::::item_inv<>Resource<>::
 tile.tscn::PackedScene::4687561792835186447::1714784830::0::1::::<><>::uid://cqkxqs7wjner1::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/floor_2.png
 ::res://addons/::1714682121
@@ -448,75 +448,75 @@ SavedData.gd::GDScript::-1::1714886160::0::1::::<>Node<>::
 ::res://scenes/abilities/::1714682121
 ::res://scenes/abilities/move/::1714784830
 move.tscn::PackedScene::8692123091750300917::1714784830::0::1::::<><>::
-::res://scenes/dungeon/::1718744063
-dungeon.tscn::PackedScene::4691291291985971811::1718744063::0::1::::<><>::uid://b1qerpdps0e62::::res://scenes/entities/player/player.tscn<>res://scenes/dungeon/Rooms.gd<>uid://cljqw1v1n2yog::::res://scenes/UI/heartcontainer.tscn<>uid://dd08v40rmppdb::::res://scenes/UI/inventario.tscn
+::res://scenes/dungeon/::1718745094
+dungeon.tscn::PackedScene::4691291291985971811::1718745094::0::1::::<><>::uid://b1qerpdps0e62::::res://scenes/entities/player/player.tscn<>res://scenes/dungeon/Rooms.gd<>uid://cljqw1v1n2yog::::res://scenes/UI/heartcontainer.tscn<>uid://dd08v40rmppdb::::res://scenes/UI/inventario.tscn
 Rooms.gd::GDScript::-1::1715202964::0::1::::<>Node2D<>::
-::res://scenes/dungeon/rooms/::1718744065
+::res://scenes/dungeon/rooms/::1718745096
 Door.gd::GDScript::-1::1718740391::0::1::::<>StaticBody2D<>::
-Door.tscn::PackedScene::1501268359360058915::1718744065::0::1::::<><>::res://scenes/dungeon/rooms/Door.gd<>uid://cye3lrbe0jal3::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_spritesheet.png<>uid://bbjq1e3jsaqoo::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_fullyopen.png
+Door.tscn::PackedScene::1501268359360058915::1718745096::0::1::::<><>::res://scenes/dungeon/rooms/Door.gd<>uid://cye3lrbe0jal3::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_spritesheet.png<>uid://bbjq1e3jsaqoo::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_fullyopen.png
 dungeon.tscn::PackedScene::8172153366896971088::1714858890::0::1::::<><>::
-EndRoom0.tscn::PackedScene::6205617085234802733::1718744062::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn
+EndRoom0.tscn::PackedScene::6205617085234802733::1718745093::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn
 Room.gd::GDScript::-1::1718743657::0::1::::DungeonRoom<>Node2D<>::
-Room.tscn::PackedScene::2185944956857155938::1718744063::0::1::::<><>::res://scenes/dungeon/rooms/Room.gd<>uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>uid://b3f7em48fgx8o::::res://scenes/items/potion.tscn<>uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://d27fvaxut610u::::res://scenes/items/bible.tscn<>uid://bvbw1de5wjk38::::res://scenes/items/knife.tscn<>uid://syk7s52tmxgm::::res://scenes/items/danada.tscn<>uid://xx02l4i2q7pp::::res://scenes/items/estocada.tscn<>uid://bliiivoakfn8d::::res://scenes/items/lanza.tscn<>uid://fdctqxyxn4k6::::res://scenes/items/glaive.tscn<>uid://weruhjr51xsy::::res://scenes/items/hammer.tscn<>uid://d2sehgydrow1k::::res://scenes/items/claymore.tscn<>uid://byuiyktuam5uw::::res://scenes/entities/enemies/Slime2.tscn
+Room.tscn::PackedScene::2185944956857155938::1718745094::0::1::::<><>::res://scenes/dungeon/rooms/Room.gd<>uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png<>uid://b3f7em48fgx8o::::res://scenes/items/potion.tscn<>uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://d27fvaxut610u::::res://scenes/items/bible.tscn<>uid://bvbw1de5wjk38::::res://scenes/items/knife.tscn<>uid://syk7s52tmxgm::::res://scenes/items/danada.tscn<>uid://xx02l4i2q7pp::::res://scenes/items/estocada.tscn<>uid://bliiivoakfn8d::::res://scenes/items/lanza.tscn<>uid://fdctqxyxn4k6::::res://scenes/items/glaive.tscn<>uid://weruhjr51xsy::::res://scenes/items/hammer.tscn<>uid://d2sehgydrow1k::::res://scenes/items/claymore.tscn<>uid://byuiyktuam5uw::::res://scenes/entities/enemies/Slime2.tscn
 roominherited.tscn::PackedScene::7092020918041720253::1714947622::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn
-room_0.tscn::PackedScene::3688615693402351525::1718744062::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
+room_0.tscn::PackedScene::3688615693402351525::1718745094::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
 room_1.tscn::PackedScene::3150487373306755390::1715116534::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
 room_3.tscn::PackedScene::8155926818641296959::1715116534::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
 room_4.tscn::PackedScene::3284817348020946361::1715116534::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
-spawn.tscn::PackedScene::9170826681280287357::1718744063::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png
-SpawnRoom0.tscn::PackedScene::4306254067260871606::1718744063::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
-SpawnRoom1.tscn::PackedScene::9103888063117379525::1718744063::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
+spawn.tscn::PackedScene::9170826681280287357::1718745094::0::1::::<><>::uid://ly0hlrofy8kn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png
+SpawnRoom0.tscn::PackedScene::4306254067260871606::1718745094::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
+SpawnRoom1.tscn::PackedScene::9103888063117379525::1718745094::0::1::::<><>::uid://6e5gulxh7j2y::::res://scenes/dungeon/rooms/Room.tscn<>uid://vnhw2e6s3d60::::res://scenes/dungeon/rooms/Door.tscn
 ::res://scenes/entities/::1714688341
-::res://scenes/entities/enemies/::1718744062
+::res://scenes/entities/enemies/::1718745094
 goblin.tscn::PackedScene::4665900634505177617::1714972884::0::1::::<><>::uid://5whprvl1oikq::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_spritesheet.png
-Slime2.tscn::PackedScene::4112769636576923862::1718744062::0::1::::<><>::res://scripts/slime2.gd<>uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
+Slime2.tscn::PackedScene::4112769636576923862::1718745094::0::1::::<><>::res://scripts/slime2.gd<>uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
 slime.tscn::PackedScene::4524601498183368656::1714886157::0::1::::<><>::uid://crirmb06tnp8j::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime/slime_run_spritesheeet.png
-::res://scenes/entities/player/::1718744065
-bible_combate.tscn::PackedScene::8375579439879645658::1718744065::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://b4k7hmy7r2fan::::res://Art/SwordTember2023-RunicPixels/SwordtemberSword24.png
-claymore_combate.tscn::PackedScene::4493029379574038188::1718744065::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png
-danada_combate.tscn::PackedScene::8270783082677749028::1718744064::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-espada_combate.tscn::PackedScene::3381946873394216061::1718744064::0::1::::<><>::res://scripts/espada_combate.gd<>uid://dnqai01rto5io::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png
-estocada_combate.tscn::PackedScene::6661339082344683540::1718744064::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-glaive_combate.tscn::PackedScene::3560881518328558837::1718744065::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-hammer_combate.tscn::PackedScene::2327256640476262745::1718744065::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+::res://scenes/entities/player/::1718745096
+bible_combate.tscn::PackedScene::8375579439879645658::1718745096::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://b4k7hmy7r2fan::::res://Art/SwordTember2023-RunicPixels/SwordtemberSword24.png
+claymore_combate.tscn::PackedScene::4493029379574038188::1718745096::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png
+danada_combate.tscn::PackedScene::8270783082677749028::1718745095::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+espada_combate.tscn::PackedScene::3381946873394216061::1718745095::0::1::::<><>::res://scripts/espada_combate.gd<>uid://dnqai01rto5io::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png
+estocada_combate.tscn::PackedScene::6661339082344683540::1718745095::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+glaive_combate.tscn::PackedScene::3560881518328558837::1718745096::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+hammer_combate.tscn::PackedScene::2327256640476262745::1718745096::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
 heavy.gd::GDScript::-1::1718588875::0::1::::<>Node2D<>::
-knife_combate.tscn::PackedScene::5058691438544618662::1718744064::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://x51vm5hktrha::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_knife.png
-lanza_combate.tscn::PackedScene::5840373024283407896::1718744065::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-player.tscn::PackedScene::4244634682005587665::1718744063::0::1::::<><>::res://scripts/player.gd<>uid://byco2mirtb5dt::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_spritesheet.png<>uid://di5y76mdjr8kg::::res://scenes/UI/InventarioJugador.tres<>uid://jwtxtvxmj5tc::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_run_spritesheet.png<>uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>res://scripts/arma.gd<>uid://cecp55x0q628a::::res://scenes/entities/player/knife_combate.tscn<>uid://dp3oua44plv2s::::res://scenes/entities/player/danada_combate.tscn<>res://scripts/estoque.gd<>uid://c152jtmg780se::::res://scenes/entities/player/estocada_combate.tscn<>uid://cphedcr5sa0au::::res://scenes/entities/player/lanza_combate.tscn<>uid://bqy6g0kfxpnbx::::res://scenes/entities/player/glaive_combate.tscn<>res://scenes/entities/player/heavy.gd<>uid://8fltu3umaaa0::::res://scenes/entities/player/hammer_combate.tscn<>uid://b5apsjju1887a::::res://scenes/entities/player/claymore_combate.tscn<>uid://drlgtms8yfuu1::::res://scenes/entities/player/bible_combate.tscn
-::res://scenes/items/::1718744065
-bible.tscn::PackedScene::9120762040537775286::1718744065::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png<>uid://cki221fde88u2::::res://scenes/UI/bible.tres
-claymore.tscn::PackedScene::9091775349782661046::1718744065::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://bgnf6g0ltqy6s::::res://scenes/UI/claymore.tres<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png
-Coleccionable.tscn::PackedScene::6734944642508241122::1718744063::0::1::::<><>::res://scripts/Coleccionable.gd
-danada.tscn::PackedScene::1313609559931719204::1718744064::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://cyv6yovjoiuw5::::res://scenes/UI/danada.tres<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-espada.tscn::PackedScene::3312312303160208656::1718744063::0::1::::<><>::uid://c27ps30g2v32e::::res://scenes/items/Coleccionable.tscn<>res://scripts/espada.gd<>uid://dnqai01rto5io::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png<>uid://cb4f46wxxup18::::res://scenes/UI/sword.tres
-estocada.tscn::PackedScene::1663390856229123965::1718744065::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://bktbh1ag3k2w5::::res://scenes/UI/estocada.tres<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-glaive.tscn::PackedScene::357293592547901823::1718744065::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png<>uid://c3r2ch83mrjrc::::res://scenes/UI/glaive.tres
-hammer.tscn::PackedScene::1553480358188311528::1718744065::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://bjv2t361auxk::::res://scenes/UI/hammer.tres<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-knife.tscn::PackedScene::3863833147470326889::1718744064::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://x51vm5hktrha::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_knife.png<>uid://byx0uu5yu6evf::::res://scenes/UI/knife.tres
-lanza.tscn::PackedScene::3175514132668497249::1718744065::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://c6tpcrgkodebc::::res://scenes/UI/lanza.tres<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-potion.tscn::PackedScene::4363980957858297132::1718744063::0::1::::<><>::uid://c27ps30g2v32e::::res://scenes/items/Coleccionable.tscn<>uid://dforxq7ds82k2::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/props_itens/potion_red.png<>res://scripts/potion.gd
-::res://scenes/UI/::1718744064
-bible.tres::Resource/ItemInventario::5492933774513244207::1718741390::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png
-claymore.tres::Resource/ItemInventario::2834749955185005536::1718741390::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png
-danada.tres::Resource/ItemInventario::6502651401559473114::1718741390::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-estocada.tres::Resource/ItemInventario::3127606880868220102::1718741390::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-glaive.tres::Resource/ItemInventario::6774866761393533168::1718741390::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-hammer.tres::Resource/ItemInventario::90092559349541480::1718741390::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-healthbar.tscn::PackedScene::3225816781298068437::1718744063::0::1::::<><>::
-heart.tscn::PackedScene::7949601464707518581::1718744063::0::1::::<><>::res://scripts/heart.gd<>uid://c7f04wsmooyjn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/heart.png
-heartcontainer.tscn::PackedScene::5564510205789046762::1718744063::0::1::::<><>::res://scripts/heartcontainer.gd
-inventario.tscn::PackedScene::7423480750864500667::1718744064::0::1::::<><>::res://scripts/inventario.gd<>uid://cw5ojn5hc8ggy::::res://scenes/UI/ItemInventario.tscn
-InventarioJugador.tres::Resource/inventario::7784220132947254742::1718741390::0::1::::<><>::res://inventario.gd
-ItemInventario.tscn::PackedScene::6379794099558291588::1718744064::0::1::::<><>::res://scripts/slot.gd<>uid://c6ei2rrx7p8on::::res://Art/SimplePixelArtUIpack/Artwork/Gray/rounded/Slot_rounded_GB.png
+knife_combate.tscn::PackedScene::5058691438544618662::1718745095::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://x51vm5hktrha::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_knife.png
+lanza_combate.tscn::PackedScene::5840373024283407896::1718745096::0::1::::<><>::uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+player.tscn::PackedScene::4244634682005587665::1718745095::0::1::::<><>::res://scripts/player.gd<>uid://byco2mirtb5dt::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_spritesheet.png<>uid://di5y76mdjr8kg::::res://scenes/UI/InventarioJugador.tres<>uid://jwtxtvxmj5tc::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_run_spritesheet.png<>uid://bogif2s5yoysj::::res://scenes/entities/player/espada_combate.tscn<>res://scripts/arma.gd<>uid://cecp55x0q628a::::res://scenes/entities/player/knife_combate.tscn<>uid://dp3oua44plv2s::::res://scenes/entities/player/danada_combate.tscn<>res://scripts/estoque.gd<>uid://c152jtmg780se::::res://scenes/entities/player/estocada_combate.tscn<>uid://cphedcr5sa0au::::res://scenes/entities/player/lanza_combate.tscn<>uid://bqy6g0kfxpnbx::::res://scenes/entities/player/glaive_combate.tscn<>res://scenes/entities/player/heavy.gd<>uid://8fltu3umaaa0::::res://scenes/entities/player/hammer_combate.tscn<>uid://b5apsjju1887a::::res://scenes/entities/player/claymore_combate.tscn<>uid://drlgtms8yfuu1::::res://scenes/entities/player/bible_combate.tscn
+::res://scenes/items/::1718745096
+bible.tscn::PackedScene::9120762040537775286::1718745096::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png<>uid://cki221fde88u2::::res://scenes/UI/bible.tres
+claymore.tscn::PackedScene::9091775349782661046::1718745096::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://bgnf6g0ltqy6s::::res://scenes/UI/claymore.tres<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png
+Coleccionable.tscn::PackedScene::6734944642508241122::1718745094::0::1::::<><>::res://scripts/Coleccionable.gd
+danada.tscn::PackedScene::1313609559931719204::1718745095::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://cyv6yovjoiuw5::::res://scenes/UI/danada.tres<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+espada.tscn::PackedScene::3312312303160208656::1718745095::0::1::::<><>::uid://c27ps30g2v32e::::res://scenes/items/Coleccionable.tscn<>res://scripts/espada.gd<>uid://dnqai01rto5io::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png<>uid://cb4f46wxxup18::::res://scenes/UI/sword.tres
+estocada.tscn::PackedScene::1663390856229123965::1718745095::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://bktbh1ag3k2w5::::res://scenes/UI/estocada.tres<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+glaive.tscn::PackedScene::357293592547901823::1718745096::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png<>uid://c3r2ch83mrjrc::::res://scenes/UI/glaive.tres
+hammer.tscn::PackedScene::1553480358188311528::1718745096::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://bjv2t361auxk::::res://scenes/UI/hammer.tres<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+knife.tscn::PackedScene::3863833147470326889::1718745095::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://x51vm5hktrha::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_knife.png<>uid://byx0uu5yu6evf::::res://scenes/UI/knife.tres
+lanza.tscn::PackedScene::3175514132668497249::1718745096::0::1::::<><>::uid://bngrkgplpgj6o::::res://scenes/items/espada.tscn<>uid://c6tpcrgkodebc::::res://scenes/UI/lanza.tres<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+potion.tscn::PackedScene::4363980957858297132::1718745094::0::1::::<><>::uid://c27ps30g2v32e::::res://scenes/items/Coleccionable.tscn<>uid://dforxq7ds82k2::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/props_itens/potion_red.png<>res://scripts/potion.gd
+::res://scenes/UI/::1718745095
+bible.tres::Resource/ItemInventario::5492933774513244207::1718744170::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png
+claymore.tres::Resource/ItemInventario::2834749955185005536::1718744170::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://ck1xlkfk6wq34::::res://Art/weapon pack/Only weapons (Beginning ).png
+danada.tres::Resource/ItemInventario::6502651401559473114::1718744170::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+estocada.tres::Resource/ItemInventario::3127606880868220102::1718744170::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+glaive.tres::Resource/ItemInventario::6774866761393533168::1718744170::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+hammer.tres::Resource/ItemInventario::90092559349541480::1718744170::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+healthbar.tscn::PackedScene::3225816781298068437::1718745095::0::1::::<><>::
+heart.tscn::PackedScene::7949601464707518581::1718745095::0::1::::<><>::res://scripts/heart.gd<>uid://c7f04wsmooyjn::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/ui (new)/heart.png
+heartcontainer.tscn::PackedScene::5564510205789046762::1718745095::0::1::::<><>::res://scripts/heartcontainer.gd
+inventario.tscn::PackedScene::7423480750864500667::1718745095::0::1::::<><>::res://scripts/inventario.gd<>uid://cw5ojn5hc8ggy::::res://scenes/UI/ItemInventario.tscn
+InventarioJugador.tres::Resource/inventario::7784220132947254742::1718744170::0::1::::<><>::res://inventario.gd
+ItemInventario.tscn::PackedScene::6379794099558291588::1718745095::0::1::::<><>::res://scripts/slot.gd<>uid://c6ei2rrx7p8on::::res://Art/SimplePixelArtUIpack/Artwork/Gray/rounded/Slot_rounded_GB.png
 knife.tres::Resource/Resource::4119988357976048663::1718574097::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://x51vm5hktrha::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_knife.png
-lanza.tres::Resource/ItemInventario::6988833926610612972::1718741390::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
-sword.tres::Resource/ItemInventario::4903254202165148737::1718741390::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://dnqai01rto5io::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png
+lanza.tres::Resource/ItemInventario::6988833926610612972::1718744170::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://d6vtvkol2sg8::::res://Art/Medieval weapons pack/steel/outline original.png
+sword.tres::Resource/ItemInventario::4903254202165148737::1718744170::0::1::::<><>::res://scripts/ItemInventario.gd<>uid://dnqai01rto5io::::res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/weapon_sword_1.png
 texture_progress_bar.tscn::PackedScene::1101146873943525286::1714784830::0::1::::<><>::uid://bn2ds5xs5a625::::res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniUnder.png<>uid://b24wiwabm4l8k::::res://Art/SimplePixelArtUIpack/Artwork/ColorCustomizible/rounded/bar_rounded_CC_horizontal.png<>uid://b2t0w6quwc8vm::::res://Art/SimplePixelArtUIpack/Artwork/ui/LifeBarMiniProgress.png<>res://scripts/barra_de_vida.gd
 ::res://scenes/World(unused)/::1714858890
 Walker.gd::GDScript::-1::1714858890::0::1::::Walker<>Node<>::
 World.gd::GDScript::-1::1714858890::0::1::::<>Node2D<>::
 World.tscn::PackedScene::6672348062715180233::1714858890::0::1::::<><>::res://scenes/World(unused)/World.gd<>uid://db8d5qhcr5a0h::::res://Art/DgmPGOg.png
-::res://scripts/::1718744062
+::res://scripts/::1718745093
 arma.gd::GDScript::-1::1718573781::0::1::::<>Node2D<>::
 barra_de_vida.gd::GDScript::-1::1714782097::0::1::::<>TextureProgressBar<>::
 Coleccionable.gd::GDScript::-1::1718329379::0::1::::<>Area2D<>::
@@ -530,5 +530,5 @@ inventario.gd::GDScript::-1::1718328897::0::1::::<>Control<>::
 ItemInventario.gd::GDScript::-1::1718574072::0::1::::ItemInventario<>Resource<>::
 player.gd::GDScript::-1::1718586219::0::1::::<>CharacterBody2D<>::
 potion.gd::GDScript::-1::1717627852::0::1::::<>Area2D<>::
-slime2.gd::GDScript::-1::1718744016::0::1::::<>CharacterBody2D<>::
+slime2.gd::GDScript::-1::1718745093::0::1::::<>CharacterBody2D<>::
 slot.gd::GDScript::-1::1718323760::0::1::::<>Panel<>::

@@ -6,5 +6,12 @@
 [node name="knifeCombate" instance=ExtResource("1_ta0cw")]
 
 [node name="Sprite2D" parent="." index="0"]
-position = Vector2(3, -3)
+position = Vector2(4, -5)
+scale = Vector2(1.25, 1.25)
 texture = ExtResource("2_vj6po")
+
+[node name="HitBox1" parent="." index="1"]
+position = Vector2(5, -7)
+
+[node name="HitBox2" parent="." index="2"]
+position = Vector2(2, -3)

@@ -10,3 +10,9 @@ position = Vector2(1, -9)
 texture = ExtResource("2_hqtop")
 region_enabled = true
 region_rect = Rect2(85, 21, 10, 24)
+
+[node name="HitBox1" parent="." index="1"]
+position = Vector2(1, -10)
+
+[node name="HitBox2" parent="." index="2"]
+position = Vector2(1, -16)
