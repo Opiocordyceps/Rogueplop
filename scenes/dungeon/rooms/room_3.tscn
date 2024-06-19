@@ -21,7 +21,10 @@ position = Vector2(119, 167)
 position = Vector2(135, 167)
 
 [node name="Door" parent="Doors" index="0" instance=ExtResource("2_yaphk")]
-position = Vector2(145, 32)
+position = Vector2(144, 31)
+
+[node name="Door2" parent="Doors" index="1" instance=ExtResource("2_yaphk")]
+position = Vector2(127, 159)
 
 [node name="Marker2D" type="Marker2D" parent="EnemyPositions" index="0"]
 position = Vector2(49, 84)

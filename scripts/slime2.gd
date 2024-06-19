@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+signal muerto
 const speed = 50
 var vidaMaxima = 3
 var fuerzaEmpuje: int = 1500
@@ -44,4 +45,5 @@ func _on_hurt_box_area_entered(area):
 	move_and_slide()
 	if vidaActual == 0:
 		$hitBox.set_deferred("monitorable", false)	
+		muerto.emit()
 		queue_free()

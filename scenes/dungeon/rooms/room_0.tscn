@@ -23,6 +23,9 @@ position = Vector2(168, 167)
 [node name="Door" parent="Doors" index="0" instance=ExtResource("2_jf15s")]
 position = Vector2(64, 32)
 
+[node name="Door2" parent="Doors" index="1" instance=ExtResource("2_jf15s")]
+position = Vector2(160, 159)
+
 [node name="Marker2D" type="Marker2D" parent="EnemyPositions" index="0"]
 position = Vector2(48, 115)
 
@@ -30,5 +33,5 @@ position = Vector2(48, 115)
 position = Vector2(212, 74)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
-position = Vector2(160, 158)
+position = Vector2(160, 153)
 shape = SubResource("RectangleShape2D_3ncbw")

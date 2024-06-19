@@ -21,7 +21,6 @@ var parent: Node2D
 
 func _ready() -> void:
 	num_enemies = enemy_positions_container.get_child_count()
-	_spawn_enemies()
 func _on_enemy_killed() -> void:
 	num_enemies -= 1
 	if num_enemies == 0:
@@ -34,11 +33,13 @@ func _open_doors() -> void:
 
 
 func _close_entrance() -> void:
-	for entry_position in entrance.get_children():
-		print(tilemap.local_to_map(entry_position.position))
-		tilemap.set_cell(0, tilemap.local_to_map(entry_position.position), 1, Vector2i.ZERO)
-		tilemap.set_cell(0, tilemap.local_to_map(entry_position.position) + Vector2i.DOWN, 2, Vector2i.ZERO)
-
+	for door in door_container.get_children():
+		door.close()
+#func _close_entrance() -> void:
+	#for entry_position in entrance.get_children():
+		#print(tilemap.local_to_map(entry_position.position))
+		#tilemap.set_cell(0, tilemap.local_to_map(entry_position.position), 1, Vector2i.ZERO)
+		#tilemap.set_cell(0, tilemap.local_to_map(entry_position.position) + Vector2i.DOWN, 2, Vector2i.ZERO)
 #
 func _spawn_enemies() -> void:
 	for enemy_position in enemy_positions_container.get_children():
@@ -54,6 +55,7 @@ func _spawn_enemies() -> void:
 				#enemy = ENEMY_SCENES.GOBLIN.instantiate()
 		enemy_position.add_child(enemy)
 		enemy.global_position = enemy_position.global_position
+		enemy.muerto.connect(_on_enemy_killed)
 #
 		#var spawn_explosion: AnimatedSprite2D = SPAWN_EXPLOSION_SCENE.instantiate()
 		#spawn_explosion.position = enemy_position.position
@@ -61,11 +63,8 @@ func _spawn_enemies() -> void:
 
 
 
-func _on_PlayerDetector_body_entered(_body: CharacterBody2D) -> void:
+func _on_player_detector_body_entered(body):
 	player_detector.queue_free()
 	if num_enemies > 0:
 		_close_entrance()
-		#_spawn_enemies()
-	else:
-		_close_entrance()
-		_open_doors()
+		_spawn_enemies()
