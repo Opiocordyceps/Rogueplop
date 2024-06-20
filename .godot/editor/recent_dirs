@@ -1,5 +1,6 @@
-res://scenes/World(unused)
 res://scripts
+res://scenes/entities/enemies
+res://scenes/World(unused)
 res://scenes/UI
 res://scenes/dungeon
 res://scenes/entities/player
@@ -11,7 +12,6 @@ res://scenes/dungeon/rooms
 res://Autoloads
 res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall
 res://
-res://scenes/entities/enemies
 res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/slime
 res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin
 res://scenes/entities

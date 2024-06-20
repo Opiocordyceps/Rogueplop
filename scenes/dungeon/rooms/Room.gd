@@ -6,7 +6,7 @@ class_name DungeonRoom
 
 #const SPAWN_EXPLOSION_SCENE: PackedScene = preload("res://Characters/Enemies/SpawnExplosion.tscn")
 
-@export var ENEMY_SCENES: Array = [preload("res://scenes/entities/enemies/Slime2.tscn")]
+@export var ENEMY_SCENES: Array = [preload("res://scenes/entities/enemies/Slime2.tscn"),preload("res://scenes/entities/enemies/goblin.tscn")]
 
 var num_enemies: int
 var parent: Node2D

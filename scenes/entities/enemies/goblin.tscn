@@ -1,70 +1,290 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7qgx4hyyjj4l"]
+[gd_scene load_steps=27 format=3 uid="uid://b7qgx4hyyjj4l"]
 
-[ext_resource type="Texture2D" uid="uid://5whprvl1oikq" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_spritesheet.png" id="1_bwevm"]
+[ext_resource type="Script" path="res://scripts/goblin.gd" id="1_4coma"]
+[ext_resource type="Texture2D" uid="uid://dju0bi7fnsf0j" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_idle_anim_f0.png" id="1_jceep"]
+[ext_resource type="Texture2D" uid="uid://dup3ltq1bfoju" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_idle_anim_f1.png" id="2_mg3av"]
+[ext_resource type="Texture2D" uid="uid://i1aefbg8j3q8" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_idle_anim_f2.png" id="3_kh1gn"]
+[ext_resource type="Texture2D" uid="uid://deifuesx6aj28" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_idle_anim_f3.png" id="4_ljb4r"]
+[ext_resource type="Texture2D" uid="uid://bhcadi7644mcs" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_idle_anim_f4.png" id="5_ra1sr"]
+[ext_resource type="Texture2D" uid="uid://biwb20qfc22kh" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_idle_anim_f5.png" id="6_3ml8t"]
+[ext_resource type="Texture2D" uid="uid://ch4w8mq3iabbt" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_anim_f0.png" id="7_r3fas"]
+[ext_resource type="Texture2D" uid="uid://deofsy2m1p37r" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_anim_f1.png" id="8_xpgqq"]
+[ext_resource type="Texture2D" uid="uid://dixxmhqqbr78j" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_anim_f2.png" id="9_o8yqc"]
+[ext_resource type="Texture2D" uid="uid://5da1y1ev8qci" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_anim_f3.png" id="10_dqxyt"]
+[ext_resource type="Texture2D" uid="uid://cbkjxjac5so3n" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_anim_f4.png" id="11_pb3ko"]
+[ext_resource type="Texture2D" uid="uid://bayb3dnf8f26j" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/enemies/goblin/goblin_run_anim_f5.png" id="12_j7a5r"]
+[ext_resource type="PackedScene" uid="uid://cecp55x0q628a" path="res://scenes/entities/player/knife_combate.tscn" id="13_ydftr"]
+[ext_resource type="Script" path="res://scripts/GoblinWeapon.gd" id="14_kwrac"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3s0nr"]
-atlas = ExtResource("1_bwevm")
-region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_55lpm"]
-atlas = ExtResource("1_bwevm")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ru5qx"]
-atlas = ExtResource("1_bwevm")
-region = Rect2(32, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_583cc"]
-atlas = ExtResource("1_bwevm")
-region = Rect2(48, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pibrl"]
-atlas = ExtResource("1_bwevm")
-region = Rect2(64, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1g3s5"]
-atlas = ExtResource("1_bwevm")
-region = Rect2(80, 0, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_dkgjk"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_7uncq"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3s0nr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_55lpm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ru5qx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_583cc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pibrl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1g3s5")
+"texture": ExtResource("1_jceep")
 }],
 "loop": true,
 "name": &"default",
-"speed": 8.0
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jceep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mg3av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kh1gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ljb4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ra1sr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3ml8t")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_r3fas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xpgqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_o8yqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dqxyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_pb3ko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_j7a5r")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jo0mh"]
-size = Vector2(6, 12)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2pxnh"]
+size = Vector2(12, 12)
 
-[node name="goblin" type="Node2D"]
+[sub_resource type="Animation" id="Animation_jlg4i"]
+resource_name = "attackRight"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(5, -5), Vector2(7, 0), Vector2(5, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("weapon:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.785398, 1.5708]
+}
+
+[sub_resource type="Animation" id="Animation_g7ef3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(5, -5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("weapon:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_n1mbj"]
+resource_name = "attackLeft"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-5, -5), Vector2(-7, 0), Vector2(-5, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("weapon:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [4.71239, 3.92699, 3.14159]
+}
+
+[sub_resource type="Animation" id="Animation_u7avx"]
+resource_name = "attackDown"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(5, 5), Vector2(0, 7), Vector2(-5, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("weapon:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.5708, 2.35619, 3.14159]
+}
+
+[sub_resource type="Animation" id="Animation_ybbv4"]
+resource_name = "attackUp"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5, -5), Vector2(5, -5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("weapon:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.5708, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3nv05"]
+_data = {
+"RESET": SubResource("Animation_g7ef3"),
+"attackDown": SubResource("Animation_u7avx"),
+"attackLeft": SubResource("Animation_n1mbj"),
+"attackRight": SubResource("Animation_jlg4i"),
+"attackUp": SubResource("Animation_ybbv4")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mha75"]
+size = Vector2(12, 13)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n5sba"]
+radius = 20.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cq04b"]
+radius = 8.0
+
+[node name="Goblin" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_4coma")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_dkgjk")
-autoplay = "default"
-frame = 3
-frame_progress = 0.230054
+sprite_frames = SubResource("SpriteFrames_7uncq")
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 0)
-shape = SubResource("RectangleShape2D_jo0mh")
+shape = SubResource("RectangleShape2D_2pxnh")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="attack" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3nv05")
+}
+
+[node name="hurtBox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtBox"]
+position = Vector2(1, -0.5)
+shape = SubResource("RectangleShape2D_mha75")
+
+[node name="weapon" type="Node2D" parent="."]
+position = Vector2(5, -5)
+script = ExtResource("14_kwrac")
+
+[node name="knifeCombate" parent="weapon" instance=ExtResource("13_ydftr")]
+
+[node name="PlayerDetector" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector"]
+shape = SubResource("CircleShape2D_n5sba")
+
+[node name="hitBox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitBox"]
+shape = SubResource("CircleShape2D_cq04b")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="hurtBox" to="." method="_on_hurt_box_area_entered"]
+[connection signal="area_entered" from="PlayerDetector" to="." method="_on_player_detector_area_entered"]
+[connection signal="area_exited" from="PlayerDetector" to="." method="_on_player_detector_area_exited"]

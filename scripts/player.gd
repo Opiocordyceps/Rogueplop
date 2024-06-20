@@ -46,6 +46,9 @@ func _physics_process(delta):
 		for area in hurtBox.get_overlapping_areas():
 			if area.name == "hitBox":
 				dañadoPorEnemigo(area)
+			if area.get_parent().get_parent().name != "player":
+				if area.name == "knifeCombate":
+					dañadoPorEnemigo(area.get_parent().get_parent().get_node("hurtBox"))
 			if area.name == "Potion":
 				pocionDeVida(area)
 
