@@ -1,7 +1,9 @@
-res://scenes/entities/player
-res://scenes/UI
-res://scenes/items
+res://scenes/World(unused)
 res://scripts
+res://scenes/UI
+res://scenes/dungeon
+res://scenes/entities/player
+res://scenes/items
 res://Art/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight
 res://Art/v1.1 dungeon crawler 16X16 pixel pack/props_itens
 C:/Users/juanp/Documents/GitHub/Rogueplop

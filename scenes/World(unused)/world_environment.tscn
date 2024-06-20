@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmbfjrw7jn3c5"]
+
+[sub_resource type="Environment" id="Environment_m5p8h"]
+background_mode = 3
+adjustment_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+process_priority = 9
+environment = SubResource("Environment_m5p8h")

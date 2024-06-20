@@ -17,7 +17,10 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+GlobalWorldEnvironment="*res://scenes/World(unused)/world_environment.tscn"
 SavedData="*res://Autoloads/SavedData.gd"
+MusicController="*res://scenes/dungeon/music_controller.tscn"
+Global="*res://scripts/global.gd"
 
 [display]
 

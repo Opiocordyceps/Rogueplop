@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh3idd6dy4aof"]
+
+[ext_resource type="Script" path="res://scripts/SFX.gd" id="2_bit4b"]
+[ext_resource type="Script" path="res://scenes/dungeon/musica.gd" id="2_ygg0b"]
+
+[node name="MusicController" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Music"
+script = ExtResource("2_ygg0b")
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+script = ExtResource("2_bit4b")

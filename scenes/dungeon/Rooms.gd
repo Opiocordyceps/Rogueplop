@@ -18,6 +18,7 @@ const LEFT_WALL_TILE_INDEX: Vector2i = Vector2i(4,5)
 
 #--Funcion que se inicializa al entrar a la escena, recupera datos de un script global para determinar la cantidad de salas a generar
 func _ready() -> void:
+	Global.type = "Dungeon"
 	SavedData.num_floor += 1
 	if SavedData.num_floor == 3:
 		num_levels = 3
