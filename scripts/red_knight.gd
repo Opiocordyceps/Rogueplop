@@ -21,7 +21,6 @@ func _ready():
 	speed = 50
 	parent()
 	attack.play("run")
-	hitBox.get_child(0).disable = true
 	
 
 func _physics_process(delta: float)->void:
