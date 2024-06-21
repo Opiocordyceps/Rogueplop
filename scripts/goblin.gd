@@ -70,6 +70,7 @@ func parent():
 func _on_hurt_box_area_entered(area):
 	if area.name == "hitBox": return
 	if area.name == "hurtBox": return
+	if area.name == "playerDetector": return
 	if area.get_parent().get_parent().name == "player":
 		area.desactivar()
 		vidaActual -= 1
@@ -77,11 +78,12 @@ func _on_hurt_box_area_entered(area):
 		velocity = direccionEmpuje
 		move_and_slide()
 		if vidaActual == 0:
-			muerto.emit()
+			muerto.emit("Normal")
 			queue_free()
 
 
 func _on_player_detector_area_entered(area):
+	if area.name == "PlayerDetector":return
 	exited = false
 	on_area()
 

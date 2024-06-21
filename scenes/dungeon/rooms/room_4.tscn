@@ -26,11 +26,14 @@ position = Vector2(144, 31)
 [node name="Door2" parent="Doors" index="1" instance=ExtResource("2_ax0un")]
 position = Vector2(64, 160)
 
+[node name="Marker2D" type="Marker2D" parent="EliteEnemyPositions" index="0"]
+position = Vector2(143, 79)
+
 [node name="Marker2D" type="Marker2D" parent="EnemyPositions" index="0"]
-position = Vector2(48, 115)
+position = Vector2(61, 91)
 
 [node name="Marker2D2" type="Marker2D" parent="EnemyPositions" index="1"]
-position = Vector2(212, 74)
+position = Vector2(212, 96)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
 position = Vector2(63, 152)

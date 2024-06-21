@@ -1,0 +1,270 @@
+[gd_scene load_steps=20 format=3 uid="uid://motq21hx4tsv"]
+
+[ext_resource type="Texture2D" uid="uid://dx4evicmghme1" path="res://Art/litte fire knight.png" id="1_bfa8f"]
+[ext_resource type="Script" path="res://scripts/red_knight.gd" id="1_gn6gu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3v1e5"]
+size = Vector2(37, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arm87"]
+atlas = ExtResource("1_bfa8f")
+region = Rect2(0, 120, 63, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpebk"]
+atlas = ExtResource("1_bfa8f")
+region = Rect2(63, 120, 63, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2jaxt"]
+atlas = ExtResource("1_bfa8f")
+region = Rect2(126, 120, 63, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ropek"]
+atlas = ExtResource("1_bfa8f")
+region = Rect2(189, 120, 63, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0wra"]
+atlas = ExtResource("1_bfa8f")
+region = Rect2(0, 378, 75, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i16et"]
+atlas = ExtResource("1_bfa8f")
+region = Rect2(75, 378, 75, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyjnk"]
+atlas = ExtResource("1_bfa8f")
+region = Rect2(170, 378, 85, 63)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jsm1k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arm87")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpebk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2jaxt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ropek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0wra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i16et")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyjnk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qmhu1"]
+size = Vector2(41, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38hgw"]
+size = Vector2(37, 32)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_506il"]
+radius = 75.0
+
+[sub_resource type="Animation" id="Animation_omi7r"]
+resource_name = "run"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_67xc6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hitBox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:flip_h")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_o62ms"]
+resource_name = "dashRight"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 4, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hitBox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:flip_h")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+
+[sub_resource type="Animation" id="Animation_ja87b"]
+resource_name = "dashLeft"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [4, 5, 6]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("hitBox/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v65yu"]
+_data = {
+"RESET": SubResource("Animation_67xc6"),
+"dashLeft": SubResource("Animation_ja87b"),
+"dashRight": SubResource("Animation_o62ms"),
+"run": SubResource("Animation_omi7r")
+}
+
+[node name="RedKnight" type="CharacterBody2D"]
+script = ExtResource("1_gn6gu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.500002, -0.499998)
+shape = SubResource("RectangleShape2D_3v1e5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 0.5)
+scale = Vector2(0.698413, 0.583333)
+sprite_frames = SubResource("SpriteFrames_jsm1k")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="hitBox" type="Area2D" parent="."]
+position = Vector2(-7, -11)
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitBox"]
+position = Vector2(28.5, 13.5)
+shape = SubResource("RectangleShape2D_qmhu1")
+disabled = true
+
+[node name="hurtBox" type="Area2D" parent="."]
+position = Vector2(-7, -11)
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtBox"]
+position = Vector2(7.5, 12)
+shape = SubResource("RectangleShape2D_38hgw")
+
+[node name="playerDetector" type="Area2D" parent="."]
+position = Vector2(-7, -11)
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="playerDetector"]
+position = Vector2(7, 12)
+shape = SubResource("CircleShape2D_506il")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v65yu")
+}
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="hurtBox" to="." method="_on_hurt_box_area_entered"]
+[connection signal="area_entered" from="playerDetector" to="." method="_on_player_detector_area_entered"]

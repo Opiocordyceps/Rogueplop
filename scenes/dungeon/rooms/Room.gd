@@ -6,24 +6,31 @@ class_name DungeonRoom
 
 #const SPAWN_EXPLOSION_SCENE: PackedScene = preload("res://Characters/Enemies/SpawnExplosion.tscn")
 
-@export var ENEMY_SCENES: Array = [preload("res://scenes/entities/enemies/Slime2.tscn"),preload("res://scenes/entities/enemies/goblin.tscn")]
-
+@export var ENEMY_SCENES: Array = [preload("res://scenes/entities/enemies/Slime2.tscn"),preload("res://scenes/entities/enemies/goblin.tscn"),preload("res://scenes/entities/enemies/eye.tscn")]
+@export var ELITE_ENEMY_SCENES: Array = [preload("res://scenes/entities/enemies/red_knight.tscn")]
 var num_enemies: int
+var num_enemies_elite: int
 var parent: Node2D
 
 @onready var tilemap: TileMap = get_node("TileMap2")
 @onready var entrance: Node2D = get_node("Entrance")
 @onready var door_container: Node2D = get_node("Doors")
 @onready var enemy_positions_container: Node2D = get_node("EnemyPositions")
+@onready var elite_enemy_positions_container: Node2D = get_node("EliteEnemyPositions")
 @onready var player_detector: Area2D = get_node("PlayerDetector")
 
 
 
 func _ready() -> void:
 	num_enemies = enemy_positions_container.get_child_count()
-func _on_enemy_killed() -> void:
-	num_enemies -= 1
-	if num_enemies == 0:
+	num_enemies_elite = elite_enemy_positions_container.get_child_count()
+
+func _on_enemy_killed(type:String) -> void:
+	if type == "Normal":
+		num_enemies -= 1
+	if type == "Elite":
+		num_enemies_elite -= 1
+	if num_enemies == 0 and num_enemies_elite == 0:
 		_open_doors()
 
 
@@ -60,10 +67,16 @@ func _spawn_enemies() -> void:
 		#var spawn_explosion: AnimatedSprite2D = SPAWN_EXPLOSION_SCENE.instantiate()
 		#spawn_explosion.position = enemy_position.position
 		#call_deferred("add_child", spawn_explosion)
+	for enemy_position in elite_enemy_positions_container.get_children():
+		var enemy = ELITE_ENEMY_SCENES.pick_random().instantiate()
+		enemy_position.add_child(enemy)
+		enemy.global_position = enemy_position.global_position
+		enemy.muerto.connect(_on_enemy_killed)
 
 
 
 func _on_player_detector_body_entered(body):
+	if body.name != "player": return
 	player_detector.queue_free()
 	if num_enemies > 0:
 		_close_entrance()
