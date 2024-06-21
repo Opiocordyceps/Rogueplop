@@ -18,13 +18,13 @@ layer_0/tile_data = PackedInt32Array(655368, 131072, 7, 655367, 131072, 7, 65536
 position = Vector2(53, 168)
 
 [node name="Marker2D2" type="Marker2D" parent="Entrance" index="1"]
-position = Vector2(69, 168)
+position = Vector2(75, 168)
 
 [node name="Door" parent="Doors" index="0" instance=ExtResource("2_ax0un")]
 position = Vector2(144, 31)
 
 [node name="Door2" parent="Doors" index="1" instance=ExtResource("2_ax0un")]
-position = Vector2(64, 159)
+position = Vector2(64, 160)
 
 [node name="Marker2D" type="Marker2D" parent="EnemyPositions" index="0"]
 position = Vector2(48, 115)

@@ -56,8 +56,8 @@ func _spawn_rooms() -> void:
 			var previous_room_door: StaticBody2D = previous_room.get_node("Doors/Door")
 #-----------Segundo Ciclo For, se conectan las salas con los Tiles correspondientes al piso y paredes para formar un pasillo
 			var exit_tile_pos: Vector2i = previous_room_tilemap.local_to_map(previous_room_door.position)  + (Vector2i.UP * 2)
-			var corridor_height: int = (randi() % 5) + 2
-			for y in corridor_height-1:
+			var corridor_height: int = 4 #(randi() % 5) + 2#
+			for y in corridor_height:
 				previous_room_tilemap.set_cell(0, exit_tile_pos + Vector2i(-2, -y), 0, LEFT_WALL_TILE_INDEX,0)
 				previous_room_tilemap.set_cell(0, exit_tile_pos + Vector2i(-1, -y), 0, FLOOR_TILE_CORD,0)
 				previous_room_tilemap.set_cell(0, exit_tile_pos + Vector2i(0, -y), 0, FLOOR_TILE_CORD,0)

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 signal cambioVida
-const SPEED = 200.0
+const SPEED = 140.0
 var maxVida = 5
 var dañado: bool = false
 @onready var vidaActual: int = maxVida
