@@ -1,4 +1,12 @@
+<<<<<<< Updated upstream
 res://MainMenu.tscn
+=======
+<<<<<<< HEAD
+res://scenes/entities/enemies/red_knight.tscn
+=======
+res://MainMenu.tscn
+>>>>>>> c044873c72045fd20309166033eff85398584852
+>>>>>>> Stashed changes
 res://scenes/UI/sword.tres
 res://scenes/UI/bible.tres
 res://scenes/UI/danada.tres
@@ -8,6 +16,13 @@ res://scenes/UI/glaive.tres
 res://scenes/UI/hammer.tres
 res://scenes/UI/claymore.tres
 res://scenes/UI/InventarioJugador.tres
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+res://MainMenu.tscn
+=======
+>>>>>>> c044873c72045fd20309166033eff85398584852
+>>>>>>> Stashed changes
 res://scenes/dungeon/rooms/EndRoom0.tscn
 res://scenes/dungeon/rooms/room_0.tscn
 res://scenes/entities/enemies/Slime2.tscn
@@ -52,5 +67,15 @@ res://scenes/World(unused)/world_environment.tscn
 res://scenes/entities/enemies/goblin.tscn
 res://scenes/dungeon/rooms/roominherited.tscn
 res://scenes/dungeon/rooms/dungeon.tscn
+<<<<<<< Updated upstream
 res://scenes/dungeon/rooms/escaleras y miscelaneos/escaleras.tscn
 res://scenes/dungeon/rooms/escaleras y miscelaneos/SceneTransistor.tscn
+=======
+<<<<<<< HEAD
+res://scenes/entities/enemies/eye.tscn
+res://scripts/red_knight.gd
+=======
+res://scenes/dungeon/rooms/escaleras y miscelaneos/escaleras.tscn
+res://scenes/dungeon/rooms/escaleras y miscelaneos/SceneTransistor.tscn
+>>>>>>> c044873c72045fd20309166033eff85398584852
+>>>>>>> Stashed changes
