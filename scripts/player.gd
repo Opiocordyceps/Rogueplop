@@ -3,6 +3,8 @@ signal cambioVida
 const SPEED = 140.0
 var maxVida = 5
 var dañado: bool = false
+var object: bool = false
+var areaObject: Area2D
 @onready var vidaActual: int = maxVida
 @onready var animation = $AnimatedSprite2D
 @onready var espada = $espada
@@ -21,6 +23,8 @@ func _ready():
 	espada.visible = false
 
 func _physics_process(delta):
+	if object == true:
+		objectRecolectado()
 	##Consigue las inputs de cualquier direccion
 	var direction = Input.get_vector("move_left","move_right","move_up","move_down")
 	##da vuelta al jugador en base a la direccion
@@ -89,9 +93,15 @@ func dañadoPorEnemigo(area):
 	efectos.play("RESET")
 	dañado = false
 
+func objectRecolectado():
+	if !Input.is_action_just_pressed("object"):return
+	if areaObject.has_method("colec"):
+			areaObject.colec(inventory)
+
 func _on_hurt_box_area_entered(area):
 	if area.has_method("colec"):
-		area.colec(inventory)
+		areaObject = area
+	object = true
 		
 func empuje(velocidadEnemigo: Vector2):
 	var direccionEmpuje = (velocidadEnemigo - velocity).normalized() * fuerzaEmpuje
@@ -99,5 +109,6 @@ func empuje(velocidadEnemigo: Vector2):
 	move_and_slide()
 
 
-func _on_hurt_box_area_exited(area):pass
+func _on_hurt_box_area_exited(area):
+	object = false
 	
