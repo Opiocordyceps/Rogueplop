@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 signal muerto
 @onready var speed = 50
-var vidaMaxima = 3
+var vidaMaxima = 5
 var fuerzaEmpuje: int = 1500
 var movimiento: bool = true
 var ultimaVelocidad: Vector2
