@@ -1,4 +1,4 @@
-res://scenes/entities/enemies/eye.tscn
+res://MainMenu.tscn
 res://scenes/UI/sword.tres
 res://scenes/UI/bible.tres
 res://scenes/UI/danada.tres
@@ -8,9 +8,6 @@ res://scenes/UI/glaive.tres
 res://scenes/UI/hammer.tres
 res://scenes/UI/claymore.tres
 res://scenes/UI/InventarioJugador.tres
-res://scripts/eye.gd
-res://scripts/goblin.gd
-res://MainMenu.tscn
 res://scenes/dungeon/rooms/EndRoom0.tscn
 res://scenes/dungeon/rooms/room_0.tscn
 res://scenes/entities/enemies/Slime2.tscn
@@ -55,7 +52,5 @@ res://scenes/World(unused)/world_environment.tscn
 res://scenes/entities/enemies/goblin.tscn
 res://scenes/dungeon/rooms/roominherited.tscn
 res://scenes/dungeon/rooms/dungeon.tscn
-res://scenes/dungeon/rooms/Room.gd
-res://scripts/slime2.gd
-res://scenes/entities/enemies/red_knight.tscn
-res://scripts/red_knight.gd
+res://scenes/dungeon/rooms/escaleras y miscelaneos/escaleras.tscn
+res://scenes/dungeon/rooms/escaleras y miscelaneos/SceneTransistor.tscn

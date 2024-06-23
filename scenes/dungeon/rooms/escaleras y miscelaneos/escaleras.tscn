@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwxvc4rhw6ikd"]
+
+[ext_resource type="Script" path="res://scenes/dungeon/rooms/escaleras y miscelaneos/escaleras.gd" id="1_mt4dr"]
+[ext_resource type="Texture2D" uid="uid://4h5hoiyjl7bp" path="res://Art/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/stair_nextlevel.png" id="2_kbkh0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cmjch"]
+size = Vector2(14.1875, 13.8594)
+
+[sub_resource type="GDScript" id="GDScript_da80h"]
+script/source = "extends CollisionShape2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Escaleras" type="Area2D"]
+script = ExtResource("1_mt4dr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_kbkh0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cmjch")
+script = SubResource("GDScript_da80h")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

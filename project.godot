@@ -21,6 +21,7 @@ GlobalWorldEnvironment="*res://scenes/World(unused)/world_environment.tscn"
 SavedData="*res://Autoloads/SavedData.gd"
 MusicController="*res://scenes/dungeon/music_controller.tscn"
 Global="*res://scripts/global.gd"
+SceneTransistor="*res://scenes/dungeon/rooms/escaleras y miscelaneos/SceneTransistor.tscn"
 
 [display]
 

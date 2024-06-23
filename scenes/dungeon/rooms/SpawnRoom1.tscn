@@ -24,9 +24,9 @@ position = Vector2(168, 168)
 [node name="Door" parent="Doors" index="0" instance=ExtResource("2_o551x")]
 position = Vector2(208, 32)
 
+[node name="PlayerSpawnPos" type="Marker2D" parent="." index="6"]
+position = Vector2(99, 138)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector" index="0"]
 position = Vector2(160, 158)
 shape = SubResource("RectangleShape2D_3ncbw")
-
-[node name="PlayerSpawnPos" type="Marker2D" parent="." index="6"]
-position = Vector2(99, 138)
